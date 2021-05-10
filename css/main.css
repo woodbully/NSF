@@ -67,17 +67,6 @@ h1 {
   text-transform: uppercase;
 }
 
-/* Change the color of links on hover */
-.tabbar a:hover {
-  background-color: var(--light-grey);
-  color: var(--text-color-dark);
-}
-
-/* Add a color to the active/current link */
-.tabbar a.active {
-  background-color: var(--light-green);
-  color: var(--text-color-light);
-}
 
 /* ---------- page styling ---------- */
 .page {
@@ -220,6 +209,9 @@ h1 {
   }
 }
 
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
 .navbar {
   position: relative;
   transition: .5s;
