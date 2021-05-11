@@ -86,7 +86,10 @@ h1 {
 }
 
 /* ---------- logo styling ---------- */
-
+.logo img{
+  max-height: 70px;
+  margin-top:15px;
+}
 
 /* ---------- animations ---------- */
 /* fade in */
@@ -105,7 +108,8 @@ h1 {
 ****************/
 .nav-mobile {
   width:100%;
-  height: 90px;
+  height:15%;
+  max-height: 90px;
   background-color: var(--whitensf);
   position: fixed;
   top: 0;
@@ -252,6 +256,34 @@ ul li:hover{
   background: var(--rednsf);
 }
 
+/*button 1*/
+
+  .btn-grad {
+    background-image: linear-gradient(to right, #cb1339 0%, #f77842 51%, #f9ce4e 100%)
+  }
+
+  .btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: var(--whitensf);
+    box-shadow: 0 0 20px #a0a0a0;
+    border-radius: 10px;
+    display: block;
+    border-color: transparent;
+  }
+
+  .btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    text-decoration: none;
+  }
+
+
+
 
 /*******************************/
 /********** Hero CSS ***********/
@@ -298,19 +330,35 @@ ul li:hover{
 }
 
 .hero .hero-btn .btn {
-  padding: 10px 10px;
+  background-image: linear-gradient(to right, #cb1339 0%, #f77842 51%, #f9ce4e 100%)
+}
+.hero .hero-btn .btn {
+ 
+   margin: 10px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   box-shadow: 0 0 20px #a0a0a0;
+   border-radius: 10px;
+   display: block;
+   border-color: transparent;
+   padding: 10px 10px;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
   color: var(--whitensf);
-  background:var(--rednsf);
-  border-radius: 30;
+  background-color: var(--rednsf);
   transition: .3s;
 }
 
 .hero .hero-btn .btn:hover {
-  color: var(--blacknsf);
-  background: var(--whitensf);
+  color: var(--rednsf);
+  background-color: var(--whitensf);
+  border-color: var(--rednsf);
+    background-position: right center;
+    /* change the direction of the change here */
+    text-decoration: none;
 }
 
 .hero .hero-btn .btn:first-child {
