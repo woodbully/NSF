@@ -73,7 +73,6 @@ h1 {
   display: none;
   /*min heigh is screen heigh minus height of tab and top bar */
   min-height: calc(100vh - 110px);
-  background: var(--light-grey);
   animation: fadeIn 0.4s;
   /* padding equals height of tabbar and topbar */
   padding: 55px 0;
@@ -99,18 +98,14 @@ h1 {
 }
 
 .hero {
-  position: relative;
   width: 100%;
+  background-image: url(../img/forsidebanner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-bottom: 45px;
-  padding: 90px 0;
-  background: #F7CAC9;
-  overflow: hidden;
+  padding: 80px 0;
 }
-
-.hero .container-fluid {
-  padding: 0;
-}
-
 
 
 .hero .hero-text {
@@ -123,26 +118,26 @@ h1 {
 }
 
 .hero .hero-text h1 {
-  color: #343148;
+  color: #ffff;
   font-size: 60px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
 .hero .hero-text p {
-  color: #343148;
-  font-size: 18px;
+  color: #ffffff;
+  font-size: 20px;
   margin-bottom: 25px;
 }
 
 .hero .hero-btn .btn {
-  padding: 12px 20px;
+  padding: 10px 10px;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
-  color: #F7CAC9;
-  background: #343148;
-  border-radius: 0;
+  color: #ffffff;
+  background:#DB0132;
+  border-radius: 30;
   transition: .3s;
 }
 
