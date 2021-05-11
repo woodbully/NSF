@@ -64,6 +64,10 @@ h1 {
   text-transform: uppercase;
 }
 
+.tabbar :hover{
+  color: var(--white);
+}
+
 @media (min-width: 991.98px) {
   .tabbar {
    display: none;
@@ -141,6 +145,21 @@ h1 {
   font-family: 'Epilogue', sans-serif;
   font-weight: 900;
   font-size:3em;
+     -webkit-text-stroke: 2px var(--black);
+     color: var(--black);
+}
+
+#li-billetter li :hover{
+  color:var(--red);
+}
+#li-information :hover {
+  color:var(--yellow);
+}
+#li-program :hover {
+  color:var(--blue);
+}
+#li-kontakt :hover {
+  color:var(--purple);
 }
 
 @media (max-width: 991.98px) {
