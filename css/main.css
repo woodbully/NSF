@@ -353,7 +353,6 @@ ul li:hover{
 }
 
 .hero .hero-btn .btn:hover {
-  color: var(--rednsf);
   background-color: var(--whitensf);
   border-color: var(--rednsf);
     background-position: right center;
@@ -426,6 +425,10 @@ ul li:hover{
   position: relative;
   width: 100%;
   padding: 45px 0;
+  background-image: url(../billeder/smoke.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter:grayscale(100%);
 }
 
 .blog .blog-carousel {
@@ -520,7 +523,7 @@ ul li:hover{
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #F7CAC9;
+  color: var(--rednsf);
   background: #343148;
   font-size: 22px;
   transition: .3s;
