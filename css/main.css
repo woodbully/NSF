@@ -1,17 +1,17 @@
 /* ---------- root variables ---------- */
 :root {
-  --red: #cb1339;
-  --orange: #f77842;
-  --yellow: #f9ce4e;
-  --blue: #66e0ff;
-  --purle: #4e57c2;
-  --white: #fffafa;
-  --black: #000000;
+  --rednsf: #cb1339;
+  --orangensf: #f77842;
+  --yellownsf: #f9ce4e;
+  --bluensf: #66e0ff;
+  --purplensf: #4e57c2;
+  --whitensf: #fffafa;
+  --blacknsf: #000000;
 }
 
 /* ---------- general styling ---------- */
 html {
-  color: var(--black);
+  color: var(--blacknsf);
   font-family: 'Montserrat', sans-serif;
   height: 100%;
   text-align: center;
@@ -21,7 +21,7 @@ html {
 
 body {
   margin: 0;
-  background-color: var(--white);
+  background-color: var(--whitensf);
 }
 
 h1 {
@@ -29,7 +29,7 @@ h1 {
   font-weight: 300;
   letter-spacing: 3px;
   font-family: 'Epilogue', sans-serif;
-   -webkit-text-stroke: 2px var(--black);
+   -webkit-text-stroke: 2px var(--blacknsf);
    color: transparent;
 }
 
@@ -37,7 +37,7 @@ h1 {
 
 /* ---------- tabbar styling ---------- */
 .tabbar {
-  background-color: var(--red);
+  background-color: var(--rednsf);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -51,7 +51,7 @@ h1 {
  flex-direction: column;
  justify-content: center;
  align-items: center;
-  color: var(--white);
+  color: var(--whitensf);
   text-align: center;
    width: 49.3%;
    height: 14%;
@@ -62,6 +62,10 @@ h1 {
   font-size: 0.8em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.tabbar :hover{
+  color: var(--whitensf);
 }
 
 @media (min-width: 991.98px) {
@@ -102,7 +106,7 @@ h1 {
 .nav-mobile {
   width:100%;
   height: 90px;
-  background-color: var(--white);
+  background-color: var(--whitensf);
   position: fixed;
   top: 0;
   left: 0;
@@ -112,7 +116,7 @@ h1 {
 .nav-mobile-menu {
   visibility: hidden;
   opacity: 0;
-  background: var(--white);
+  background: var(--whitensf);
   width: 0px;
   height: 100vh;
   position: fixed;
@@ -141,6 +145,27 @@ h1 {
   font-family: 'Epilogue', sans-serif;
   font-weight: 900;
   font-size:3em;
+
+}
+
+ul li:hover{
+   transition-timing-function: ease-in-out;
+   transition-duration: 0.3s;
+   transform: scale(1.2);
+}
+
+#li-billetter:hover {
+  color: var(--rednsf);
+}
+
+#li-information:hover {
+  color: var(--yellownsf);
+}
+#li-program:hover {
+  color: var(--bluensf);
+}
+#li-kontakt:hover {
+  color:var(--purplensf);
 }
 
 @media (max-width: 991.98px) {
@@ -158,7 +183,7 @@ h1 {
   margin: auto;
   width: 90px;
   height: 90px;
-  background-color: var(--white);
+  background-color: var(--whitensf);
   cursor: pointer;
   position: fixed;
   top: 0;
@@ -168,19 +193,19 @@ h1 {
 
 #nav-mobile-bar-top {
   top: 30px;
-  background-color: var(--red);
+  background-color: var(--rednsf);
   max-width:50px;
 }
 
 #nav-mobile-bar-middle {
   top: 45px;
-  background-color: var(--red);
+  background-color: var(--rednsf);
   max-width:50px;
 }
 
 #nav-mobile-bar-bottom {
   top: 60px;
-  background-color: var(--red);
+  background-color: var(--rednsf);
    max-width:50px;
 }
 
@@ -188,7 +213,7 @@ h1 {
   left: 15px;
   width: 60px;
   height: 3px;
-  background-color: var(--white);
+  background-color: var(--whitensf);
   position: absolute;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -201,38 +226,14 @@ h1 {
 .active#nav-mobile-bar-top {
   top: 45px;
   transform: rotate(135deg);
-  background: var(--red);
+  background: var(--rednsf);
 }
 
 
 .active#nav-mobile-bar-bottom {
   top: 45px;
   transform: rotate(-135deg);
-  background: var(--red);
-}
-
-/*Hover effects*/
-.nav-mobile-button:hover #nav-mobile-bar-top:not(.active) {
-  left: 20px;
-}
-
-.nav-mobile-button:hover #nav-mobile-bar-middle:not(.active) {
-  left: 10px;
-}
-
-.nav-mobile-button:hover #nav-mobile-bar-bottom:not(.active) {
-  left: 20px;
-}
-
-/*Hover effects active*/
-.nav-mobile-button:hover .active#nav-mobile-bar-top {
-  top: 50px;
-  left: 10px;
-}
-
-.nav-mobile-button:hover .active#nav-mobile-bar-bottom {
-  top: 40px;
-  left: 10px;
+  background: var(--rednsf);
 }
 
 
@@ -269,13 +270,13 @@ h1 {
 }
 
 .hero .hero-text h1 {
-  -webkit-text-stroke:2px #ffffff;
+  color: var(--whitensf);
   font-size: 60px;
   margin-bottom: 20px;
 }
 
 .hero .hero-text p {
-  color: var(--white);
+  color: var(--whitensf);
   font-size: 20px;
   margin-bottom: 25px;
 }
@@ -285,15 +286,15 @@ h1 {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 1px;
-  color: #ffffff;
-  background:#DB0132;
+  color: var(--whitensf);
+  background:var(--rednsf);
   border-radius: 30;
   transition: .3s;
 }
 
 .hero .hero-btn .btn:hover {
-  color: #343148;
-  background: #ffffff;
+  color: var(--blacknsf);
+  background: var(--whitensf);
 }
 
 .hero .hero-btn .btn:first-child {
