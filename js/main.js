@@ -1,10 +1,9 @@
 "use strict";
 
-    // Sticky Navbar
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 0) {
-            $('.navbar').addClass('nav-sticky');
-        } else {
-            $('.navbar').removeClass('nav-sticky');
-        }
-    });
+// nav bar
+$(".nav-mobile-button").click(function() {
+  $('.nav-mobile-bar').toggleClass('active');
+  $('.nav-mobile-menu').toggleClass('active');
+  
+});
+
