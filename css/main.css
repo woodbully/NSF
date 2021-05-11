@@ -12,7 +12,7 @@
 /* ---------- general styling ---------- */
 html {
   color: var(--black);
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   height: 100%;
   text-align: center;
   width: 100%;
@@ -28,13 +28,14 @@ h1 {
   font-size: 2em;
   font-weight: 300;
   letter-spacing: 3px;
+  font-family: 'Epilogue', sans-serif;
 }
 
 
 
 /* ---------- tabbar styling ---------- */
 .tabbar {
-  background-color: var(--green);
+  background-color: var(--red);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -44,15 +45,27 @@ h1 {
 
 /* Style the links inside the navigation bar */
 .tabbar a {
-  display: inline-block;
-  color: var(--text-color-light);
+ display: inline-flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+  color: var(--white);
   text-align: center;
+   width: 49.3%;
+   height: 14%;
+   padding-top: 2.5%;
+   padding-bottom: 5%;
   padding: 20px 16px;
   text-decoration: none;
   font-size: 0.8em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+
+@media (min-width: 991.98px) {
+  .tabbar {
+   display: none;
+  }}
 
 
 /* ---------- page styling ---------- */
@@ -86,7 +99,7 @@ h1 {
 .nav-mobile-menu {
   visibility: hidden;
   opacity: 0;
-  background: white;
+  background: var(--white);
   width: 0px;
   height: 100vh;
   position: fixed;
@@ -136,21 +149,27 @@ h1 {
 
 #nav-mobile-bar-top {
   top: 30px;
+  background-color: var(--red);
+  max-width:50px;
 }
 
 #nav-mobile-bar-middle {
   top: 45px;
+  background-color: var(--red);
+  max-width:50px;
 }
 
 #nav-mobile-bar-bottom {
   top: 60px;
+  background-color: var(--red);
+   max-width:50px;
 }
 
 .nav-mobile-bar {
   left: 15px;
   width: 60px;
   height: 3px;
-  background: ;
+  background-color: var(--white);
   position: absolute;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
