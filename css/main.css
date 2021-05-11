@@ -204,12 +204,13 @@ h1 {
 
 .hero {
   width: 100%;
-  background-image: url(../img/forsidebanner.jpg);
+  background-image: url(../img/forsidebanner2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   margin-bottom: 45px;
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 
