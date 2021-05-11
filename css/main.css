@@ -428,7 +428,6 @@ ul li:hover{
   background-image: url(../billeder/smoke.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  filter:grayscale(100%);
 }
 
 .blog .blog-carousel {
@@ -478,7 +477,7 @@ ul li:hover{
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #343148;
+  color: var(--blacknsf);
   transition: .3s;
 }
 
