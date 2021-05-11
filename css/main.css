@@ -263,25 +263,30 @@ ul li:hover{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  margin-bottom: 45px;
-  margin-top: 90px;
-  padding: 50px 0;
+  
 }
+.container-fluid {
+  background: rgba(0, 0, 0, 0.2);
+  margin-bottom: 45px;
+  margin-top: 100px;
+  padding: 70px 0;
+}
+
 
 
 .hero .hero-text {
   position: relative;
-  padding-left: 75px;
+  padding-left: 65px;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+  
 }
 
 .hero .hero-text h1 {
   color: var(--whitensf);
   font-size: 60px;
-  font-weight: 700;
   margin-bottom: 20px;
 }
 
@@ -493,4 +498,8 @@ ul li:hover{
 .blog .pagination .disabled .page-link {
   color: #999999;
 }
+
+
+
+
 
