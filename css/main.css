@@ -104,6 +104,10 @@ h1 {
   width:100%;
   height: 90px;
   background-color: var(--white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
 }
 
 .nav-mobile-menu {
@@ -135,7 +139,15 @@ h1 {
   list-style: none;
   cursor: pointer;
   margin-bottom: 30px;
-  font-size: 40px;
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 900;
+  font-size:3em;
+}
+
+@media (max-width: 991.98px) {
+  .nav-mobile-menu ul li {
+    font-size:1.5em;
+  }
 }
 
 
@@ -152,7 +164,7 @@ h1 {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 9999;
 }
 
 #nav-mobile-bar-top {
@@ -190,14 +202,14 @@ h1 {
 .active#nav-mobile-bar-top {
   top: 45px;
   transform: rotate(135deg);
-  background: black;
+  background: var(--red);
 }
 
 
 .active#nav-mobile-bar-bottom {
   top: 45px;
   transform: rotate(-135deg);
-  background: black;
+  background: var(--red);
 }
 
 /*Hover effects*/
@@ -237,6 +249,7 @@ h1 {
   background-size: cover;
   background-attachment: fixed;
   margin-bottom: 45px;
+  margin-top: 90px;
   padding: 50px 0;
 }
 
