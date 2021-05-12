@@ -340,10 +340,10 @@ ul li:hover{
   font-weight: 400;
 }
 
-<<<<<<< Updated upstream
 #hero-p {
   font-style: italic;
-=======
+}
+
 p .dato {
   margin-bottom: ;
 }
@@ -377,7 +377,6 @@ p .dato {
     background-position: right center;
     /* change the direction of the change here */
     text-decoration: none;
->>>>>>> Stashed changes
 }
 
 #home>div.hero>div>div>div>p.dato {
