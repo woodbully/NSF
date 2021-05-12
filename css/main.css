@@ -270,7 +270,7 @@ ul li:hover{
   }
 
   .btn-grad {
-    margin: 10px;
+    margin: 10px 10px 10px 0px;
     padding: 15px 45px;
     text-align: center;
     text-transform: uppercase;
@@ -328,6 +328,7 @@ ul li:hover{
   margin-bottom: 0px;
   font-weight: 900;
    font-size: 3.5vw;
+   text-align:left;
 }
 
 
@@ -339,42 +340,13 @@ ul li:hover{
   font-weight: 400;
 }
 
-.dato p {
-  margin-bottom: 0;
+#hero-p {
+  font-style: italic;
 }
 
-.hero .hero-btn .btn {
-  background-image: linear-gradient(to right, #cb1339 0%, #f77842 51%, #f9ce4e 100%)
-}
-.hero .hero-btn .btn {
-   margin: 10px 10px 10px 0px;
-   text-align: center;
-   text-transform: uppercase;
-   transition: 0.5s;
-   background-size: 200% auto;
-   box-shadow: 0 0 20px #a0a0a0;
-   border-radius: 10px;
-   display: block;
-   border: none;
-   padding: 10px 10px;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: var(--whitensf);
-  background-color: var(--rednsf);
-  transition: .3s;
-}
-
-.hero .hero-btn .btn:hover {
-  background-color: var(--whitensf);
-  border-color: var(--rednsf);
-    background-position: right center;
-    /* change the direction of the change here */
-    text-decoration: none;
-}
-
-.hero .hero-btn .btn:first-child {
-  margin-right: 10px;
+#home>div.hero>div>div>div>p.dato {
+  margin-bottom: 1%;
+  font-weight: 500;
 }
 
 
