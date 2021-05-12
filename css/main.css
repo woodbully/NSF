@@ -30,7 +30,19 @@ h1 {
   font-weight: 900;
   letter-spacing: 1px;
   font-family: 'Epilogue', sans-serif;
+  /* -webkit-text-stroke: 1px red;
+  -webkit-text-fill-color: white;
+  -webkit-animation: fill 0.5s infinite alternate;
 
+}
+@-webkit-keyframes fill {
+  from {
+    -webkit-text-fill-color: steelblue;
+  }
+
+  to {
+    -webkit-text-fill-color: slategrey;
+  } */
 }
 
 
@@ -86,9 +98,16 @@ h1 {
 }
 
 /* ---------- logo styling ---------- */
+.logo {
+max-width: 50%;
+margin: auto;
+}
+
 .logo img{
-  max-height: 60px;
-  margin-top: 15px;
+  max-width:100%;
+  max-height:70px;
+  height: auto;
+  margin-top:15px;
 }
 
 /* ---------- animations ---------- */
@@ -203,7 +222,6 @@ ul li:hover{
   margin: auto;
   width: 90px;
   height: 90px;
-  background-color: var(--whitensf);
   cursor: pointer;
   position: fixed;
   top: 0;
@@ -273,7 +291,7 @@ ul li:hover{
     box-shadow: 0 0 20px #a0a0a0;
     border-radius: 10px;
     display: block;
-    border-color: transparent;
+    border:none;
   }
 
   .btn-grad:hover {
@@ -291,8 +309,8 @@ ul li:hover{
 
 .hero {
   width: 100%;
-  background-image: url(../img/forsidebanner5.jpg);
-  background-position: center;
+  background-image: url(../img/forsidebanner2.jpg);
+  background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -344,7 +362,7 @@ ul li:hover{
    box-shadow: 0 0 20px #a0a0a0;
    border-radius: 10px;
    display: block;
-   border-color: transparent;
+   border: none;
    padding: 10px 10px;
   font-size: 14px;
   font-weight: 600;
