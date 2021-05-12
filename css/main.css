@@ -12,12 +12,11 @@
 /* ---------- general styling ---------- */
 html {
   color: var(--blacknsf);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important; 
   height: 100%;
   text-align: center;
   width: 100%;
-  font-weight: 200;
-   background-color: var(--whitensf);
+  background-color: var(--whitensf);
 }
 
 body {
@@ -30,19 +29,6 @@ h1 {
   font-weight: 900;
   letter-spacing: 1px;
   font-family: 'Epilogue', sans-serif;
-  /* -webkit-text-stroke: 1px red;
-  -webkit-text-fill-color: white;
-  -webkit-animation: fill 0.5s infinite alternate;
-
-}
-@-webkit-keyframes fill {
-  from {
-    -webkit-text-fill-color: steelblue;
-  }
-
-  to {
-    -webkit-text-fill-color: slategrey;
-  } */
 }
 
 
@@ -353,8 +339,8 @@ ul li:hover{
   font-weight: 400;
 }
 
-p .dato {
-  margin-bottom: ;
+.dato p {
+  margin-bottom: 0;
 }
 
 .hero .hero-btn .btn {
