@@ -339,9 +339,9 @@ ul li:hover{
 
 .hero .hero-text h1 {
   color: var(--whitensf);
-  font-size: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   font-weight: 900;
+   font-size: 3.5vw;
 }
 
 
@@ -349,15 +349,19 @@ ul li:hover{
 .hero .hero-text p {
   color: var(--whitensf);
   font-size: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 5%;
   font-weight: 400;
+}
+
+p .dato {
+  margin-bottom: ;
 }
 
 .hero .hero-btn .btn {
   background-image: linear-gradient(to right, #cb1339 0%, #f77842 51%, #f9ce4e 100%)
 }
 .hero .hero-btn .btn {
-   margin: 10px;
+   margin: 10px 10px 10px 0px;
    text-align: center;
    text-transform: uppercase;
    transition: 0.5s;
@@ -387,13 +391,14 @@ ul li:hover{
   margin-right: 10px;
 }
 
+
 @media (max-width: 991.98px) {
   .hero .hero-text {
     padding: 0 15px;
   }
 
-  .hero .hero-text h1 {
-    font-size: 35px;
+  .hero .hero-text h1{
+    font-size: 5vw;
   }
 
   .hero .hero-text p {
@@ -407,10 +412,7 @@ ul li:hover{
 }
 
 @media (max-width: 767.98px) {
-  .hero .hero-text h1 {
-    font-size: 30px;
-    font-weight: 600;
-  }
+
 
   .hero .hero-text p {
     font-size: 14px;
@@ -424,14 +426,15 @@ ul li:hover{
 }
 
 @media (max-width: 575.98px) {
-  .hero .hero-text h1 {
-    font-size: 25px;
-    font-weight: 600;
-  }
+
 
   .hero .hero-text p {
     font-size: 14px;
   }
+
+   .hero .hero-text h1 {
+     font-size: 8vw;
+   }
 
   .hero .hero-text .btn {
     padding: 8px 10px;
@@ -440,6 +443,14 @@ ul li:hover{
     letter-spacing: 0;
   }
 }
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    min-width:80%;
+  }
+}
+
+
 
 /*******************************/
 /*********** Blog CSS **********/
