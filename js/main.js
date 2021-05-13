@@ -8,7 +8,7 @@ $(".nav-mobile-button").click(function() {
 });
 
 // Blogs carousel
-$(".blog-carousel").owlCarousel({
+$(".lineup-carousel").owlCarousel({
   autoplay: true,
   dots: false,
   loop: true,
