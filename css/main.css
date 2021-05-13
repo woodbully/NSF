@@ -32,7 +32,15 @@ h2 {
   font-family: 'Epilogue', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: var(--whitensf);
+}
 
+.fa-external-link {
+  color: var(--whitensf);
+  margin-left: 10px;
+}
 
 /* ---------- tabbar styling ---------- */
 .tabbar {
@@ -279,7 +287,7 @@ ul li:hover {
 
 .btn-grad {
   margin: 10px 10px 10px 0px;
-  padding: 15px 45px;
+  padding: 15px 25px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
@@ -327,6 +335,7 @@ ul li:hover {
   justify-content: center;
   flex-direction: column;
   margin-top: 90px;
+  margin-bottom: 90px;
 }
 
 .hero .hero-text h1 {
@@ -335,6 +344,7 @@ ul li:hover {
   font-weight: 900;
   font-size: 3.5vw;
   text-align: left;
+  margin-top: 0;
 }
 
 
@@ -427,7 +437,7 @@ ul li:hover {
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
 }
 
 .wrapper {
@@ -448,7 +458,7 @@ ul li:hover {
   align-items: flex-end;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.2);
   transition: 0.5s ease-in-out;
-  margin: 10px; 
+  margin: 10px;
   border-radius: 10px;
   margin-top: 50px;
   margin-bottom: 100px;
@@ -460,7 +470,7 @@ ul li:hover {
 
 
 .card1:before {
-  background: linear-gradient(to bottom, rgba(203,19,57,0.5), rgba(247,120,66, 1));
+  background: linear-gradient(to bottom, rgba(203, 19, 57, 0.5), rgba(247, 120, 66, 1));
   content: "";
   position: absolute;
   top: 0;
@@ -476,7 +486,7 @@ ul li:hover {
 
 .card1:hover:before {
   opacity: 1;
-  }
+}
 
 .card2:before {
   background: linear-gradient(to bottom, rgba(247, 120, 66, 0.5), rgba(249, 206, 78, 1));
@@ -495,48 +505,48 @@ ul li:hover {
 
 .card2:hover:before {
   opacity: 1;
-  }
+}
 
-  .card3:before {
-    background: linear-gradient(to bottom, rgba(249, 206, 78, 0.5), rgba(102,224,255, 1));
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    transition: 0.5s all;
-    opacity: 0;
-    border-radius: 10px;
-  }
-  
-  .card3:hover:before {
-    opacity: 1;
-    }
+.card3:before {
+  background: linear-gradient(to bottom, rgba(249, 206, 78, 0.5), rgba(102, 224, 255, 1));
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: 0.5s all;
+  opacity: 0;
+  border-radius: 10px;
+}
 
-    .card4:before {
-      background: linear-gradient(to bottom, rgba(102,224,255, 0.5), rgba(78,87,194, 1));
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: block;
-      width: 100%;
-      height: 100%;
-      z-index: 2;
-      transition: 0.5s all;
-      opacity: 0;
-      border-radius: 10px;
-    }
-    
-    .card4:hover:before {
-      opacity: 1;
-      }
+.card3:hover:before {
+  opacity: 1;
+}
+
+.card4:before {
+  background: linear-gradient(to bottom, rgba(102, 224, 255, 0.5), rgba(78, 87, 194, 1));
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: 0.5s all;
+  opacity: 0;
+  border-radius: 10px;
+}
+
+.card4:hover:before {
+  opacity: 1;
+}
 
 
-.card img{
+.card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -547,23 +557,23 @@ ul li:hover {
 }
 
 .card h2 {
-position: relative;
-z-index: 3;
-color: var(--whitensf);
-justify-content: center;
-font-size: 20px;
-display: flex;
-text-shadow: rgb(0, 0, 0) 3px 3px 10px;
+  position: relative;
+  z-index: 3;
+  color: var(--whitensf);
+  justify-content: center;
+  font-size: 20px;
+  display: flex;
+  text-shadow: rgb(0, 0, 0) 3px 3px 10px;
 }
 
 .card .info {
-position: relative;
-z-index: 3;
-color: var(--whitensf);
-opacity: 0;
-transform: translateY(30px);
-transition: 0.5s all;
-align-items: center;
+  position: relative;
+  z-index: 3;
+  color: var(--whitensf);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s all;
+  align-items: center;
 }
 
 .card:hover .info {
@@ -582,22 +592,22 @@ align-items: center;
   margin-bottom: 20px;
 }
 
- @media screen and (max-width: 1008px) {
+@media screen and (max-width: 1008px) {
 
   .card {
     width: 35%;
     margin-bottom: 100px;
-    
+
   }
 }
 
- @media screen and (max-width: 590px) {
+@media screen and (max-width: 590px) {
 
   .card {
     width: 50%;
-    margin-bottom: 20px;  
+    margin-bottom: 20px;
   }
-} 
+}
 
 
 
@@ -654,6 +664,11 @@ hr.solid {
 
 .lineup .lineup-text p {
   margin-bottom: 10px;
+}
+
+.lineup .lineup-item a {
+  color: var(--blacknsf);
+  padding-top: 10px;
 }
 
 .lineup .lineup-item a.btn {
