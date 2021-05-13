@@ -285,7 +285,7 @@ ul li:hover {
   transition: 0.5s;
   background-size: 200% auto;
   color: var(--whitensf);
-  box-shadow: 0 0 20px #a0a0a0;
+  box-shadow: 3px 3px 10px #a0a0a0;
   border-radius: 10px;
   display: block;
   border: none;
@@ -414,6 +414,7 @@ ul li:hover {
     min-width: 80%;
   }
 }
+
 
 
 /*******************************/
