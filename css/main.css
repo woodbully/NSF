@@ -329,8 +329,7 @@ ul li:hover{
    font-size: 3.5vw;
    text-align:left;
 }
-
-
+ 
 
 .hero .hero-text p {
   color: var(--whitensf);
@@ -343,9 +342,6 @@ ul li:hover{
   font-style: italic;
 }
 
-p .dato {
-  margin-bottom: ;
-}
 
 
 #home>div.hero>div>div>div>p.dato {
@@ -427,13 +423,15 @@ p .dato {
 
 .wrapper {
   display: flex;
-  width: 70%;
+  width: 100%;
   justify-content: space-around;
+  margin-bottom: 100px;
+  flex-wrap: wrap;
 }
 
 .card {
-  width: 280px;
-  height: 360px;
+  width: 200px;
+  height: 250px;
   padding: 2rem 1rem;
   background: #fff;
   position: relative;
@@ -441,6 +439,7 @@ p .dato {
   align-items: flex-end;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.2);
   transition: 0.5s ease-in-out;
+
   
 }
 .card:hover {
@@ -482,6 +481,32 @@ justify-content: center;
 font-size: 25px;
 display: flex;
 }
+
+.card .info {
+position: relative;
+z-index: 3;
+color: var(--whitensf);
+opacity: 0;
+transform: translateY(30px);
+transition: 0.5s all;
+}
+
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.card .info h2 {
+margin: 0;
+}
+
+.card .info p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
 
 
 
