@@ -38,7 +38,7 @@ a {
 }
 
 .fa-external-link,
-.fa-angle-right {
+.lineup-text .fa-chevron-right {
   color: var(--whitensf);
   margin-left: 10px;
 }
@@ -654,7 +654,6 @@ ul li:hover {
   margin-left: 30px;
   margin-right: 30px;
   background-color: var(--whitensf);
-  box-shadow: 0 0 20px #a0a0a0;
   border-radius: 10px;
   
 }
@@ -678,7 +677,7 @@ ul li:hover {
   margin-bottom: 10px;
 }
 
-.lineup .lineup-item a li {
+.lineup .lineup-item li#lineups a {
   color: var(--blacknsf);
 }
 
@@ -720,34 +719,20 @@ ul li:hover {
 .lineup .owl-nav .owl-next {
   margin-left: 15px;
   width: 60px;
-  height: 60px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--rednsf);
-  background: #343148;
+  background: var(--whitensf);
   font-size: 22px;
   transition: .3s;
+  border-radius: 10px;
 }
 
 .lineup .owl-nav .owl-prev:hover,
 .lineup .owl-nav .owl-next:hover {
-  color: #343148;
-  background: #F7CAC9;
+  color: var(--whitensf);
+  background: var(--rednsf);
 }
 
-.lineup .pagination .page-link {
-  color: #343148;
-  border-radius: 0;
-  border-color: #343148;
-}
-
-.lineup .pagination .page-link:hover,
-.lineup .pagination .page-item.active .page-link {
-  color: #F7CAC9;
-  background: #343148;
-}
-
-.lineup .pagination .disabled .page-link {
-  color: #999999;
-}
