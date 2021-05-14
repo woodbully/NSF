@@ -19,3 +19,4 @@ function reveal() {
 
 }
 console.log(window);
+

@@ -633,6 +633,8 @@ ul li:hover {
 /*******************************/
 /*********** lineup CSS **********/
 /*******************************/
+
+
 .lineup {
   position: relative;
   width: 100%;
@@ -743,6 +745,13 @@ ul li:hover {
 
 
 
+
+/* logo slider */
+
+
+
+
+
 /* footer */
 
 .footercontainer {
@@ -822,11 +831,15 @@ footer .footercontainer .sec {
 }
 
 .footerlinks:hover {
-  transition: none;
-  
+  transition: none; 
 }
 
+.backersfont{
+color: var(--rednsf);
+  font-weight: 900;
+  font-size: 3.5vw;
 
+}
 
 
 
