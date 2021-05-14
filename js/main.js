@@ -9,7 +9,7 @@ $(".nav-mobile-button").click(function() {
 
 // Blogs carousel
 $(".lineup-carousel").owlCarousel({
-  autoplay: true,
+  autoplay: false,
   dots: false,
   loop: true,
   nav : true,
