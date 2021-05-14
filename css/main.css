@@ -747,9 +747,45 @@ ul li:hover {
 
 
 /* logo slider */
+.slider_container {
+  display:block;
+  position:relative;
+  width:100%;
+  height:50px;
+  overflow:hidden;
+  font-size:0;
+  line-height:0;
+  margin-bottom: 100px;
+}
 
+.slide {
+  -webkit-transition:left 3.5s linear;
+  transition:left 3.5s linear;
+  display:inline-block;
+  position:absolute;
+  height:50px;
+  vertical-align:top;
+  text-align:center;
+}
 
+.slide img {
+  width:auto;
+  height:100%;
+}
 
+.notransition {
+  -webkit-transition:none;
+  transition:none;
+}
+
+.backersfont{
+  color: var(--rednsf);
+    font-weight: 900;
+    font-size: 3.5vw;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  
+  }
 
 
 /* footer */
@@ -834,12 +870,7 @@ footer .footercontainer .sec {
   transition: none; 
 }
 
-.backersfont{
-color: var(--rednsf);
-  font-weight: 900;
-  font-size: 3.5vw;
 
-}
 
 
 
