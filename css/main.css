@@ -795,6 +795,7 @@ ul li:hover {
  display: flex;
  justify-content: center;
  text-align: left;
+
 }
 
 
@@ -808,7 +809,7 @@ footer {
 flex-wrap: wrap;
 }
 
-footer .footercontainer .sec {
+footer .footercontainer .sec.aboutus  {
   margin: 30px;
   width: 40%;
 }
@@ -822,6 +823,7 @@ footer .footercontainer .sec {
 .pfooter {
   line-height: 20px;
   font-size: 15px;
+  color: grey;
 }
 
 .sci {
@@ -859,17 +861,50 @@ footer .footercontainer .sec {
 .hurtigelinks {
   position: relative;
   width: 25%;
+  margin: 30px;
+  
 }
 
 .hurtigelinks ul li a {
   text-decoration: none;
   margin-bottom: 10px;
   display: inline-block;
+  color: grey;
 }
 
 .footerlinks:hover {
   transition: none; 
 }
+
+.kontakt {
+  width: calc(35% - 60px);
+  margin: 30px;
+}
+
+.kontakt li a  {
+  display: flex;
+  margin-bottom: 10px;
+  color: grey;
+}
+
+.kontakt li span:nth-child(1) {
+  color: var(--whitensf);
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.copyrighttext {
+  width: 100%;
+  background: var(--blacknsf);
+  color: grey;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+
+
+
+
 
 
 
