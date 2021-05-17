@@ -49,3 +49,11 @@ $(document).ready(function(){
     
     
   });//end document ready
+
+
+
+  // image pop ud i footer
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+  }
