@@ -579,6 +579,7 @@ ul li:hover {
   font-size: 20px;
   display: flex;
   text-shadow: rgb(0, 0, 0) 3px 3px 10px;
+  margin: 0;
 }
 
 .card .info {
@@ -605,7 +606,7 @@ ul li:hover {
   letter-spacing: 1px;
   font-size: 15px;
   margin-top: 8px;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 @media screen and (max-width: 1008px) {
@@ -804,18 +805,19 @@ footer {
   color: var(--whitensf);
   justify-content: space-around;
 flex-wrap: wrap;
+
 }
 
-footer .footercontainer .sec.aboutus  {
+.footercontainer .sec.aboutus  {
   margin: 30px;
  
 }
-
 
  .footerh2  {
   text-decoration: underline;
   text-decoration-color: var(--rednsf); 
   font-size: 20px;
+  margin: 0px;
 }
 
 .pfooter {
@@ -882,11 +884,23 @@ footer .footercontainer .sec.aboutus  {
   margin-bottom: 10px;
   color: grey;
 }
+.kontakt .info {
+  position: relative;
+}
+
+.kontakt .info li {
+  display: flex;
+  line-height: 35px;
+}
 
 .kontakt li span:nth-child(1) {
   color: var(--whitensf);
   font-size: 20px;
   margin-right: 10px;
+}
+
+.kontakt .info p {
+  margin: 0;
 }
 
 .copyrighttext {
@@ -896,6 +910,13 @@ footer .footercontainer .sec.aboutus  {
   text-align: center;
   padding-bottom: 20px;
 }
+
+.pladsen {
+  margin: 30px;
+}
+
+
+
 
 
 
