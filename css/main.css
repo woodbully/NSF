@@ -32,6 +32,13 @@ h2 {
   font-family: 'Epilogue', sans-serif;
 }
 
+h2 {
+  font-weight: 900;
+  font-size: 3.5vw;
+  margin-bottom: 50px; 
+}
+
+
 a {
   text-decoration: none;
   color: var(--whitensf);
@@ -374,9 +381,10 @@ ul li:hover {
     padding: 0 15px;
   }
 
-  .hero .hero-text h1 {
+  .hero .hero-text h1, h2 {
     font-size: 5vw;
   }
+
 
   .hero .hero-text p {
     font-size: 16px;
@@ -813,6 +821,7 @@ footer .footercontainer .sec.aboutus  {
   margin: 30px;
   width: 40%;
 }
+
 
  .footerh2  {
   text-decoration: underline;
