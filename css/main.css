@@ -142,8 +142,8 @@ a {
 }
 
 .nav-top {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 200px auto 200px;
   height: 100%;
 }
 
@@ -237,7 +237,6 @@ ul li:hover {
   width: 90px;
   height: 90px;
   cursor: pointer;
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
