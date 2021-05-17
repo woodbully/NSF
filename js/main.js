@@ -38,7 +38,6 @@ $(".lineup-carousel").owlCarousel({
 
 // wordpress API 
 
-
 const url = "http://idakronborg.dk/portfolio/wp-json/wp/v2/posts?_embed";
 
 fetch(url)
