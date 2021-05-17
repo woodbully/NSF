@@ -929,6 +929,28 @@ flex-wrap: wrap;
   margin: 30px;
 }
 
+@media screen and (max-width: 1142px) {
+
+  .footercontainer {
+    display: grid;
+ grid-template-columns: 50% 50% ;
+  }
+
+}
+
+@media screen and (max-width:555px) {
+
+  footer .footercontainer {
+    text-align: center;
+ grid-template-columns: 100%;
+  }
+
+  .info  {
+    text-align: center;
+ grid-template-columns: 100%;
+  }
+
+}
 
 
 
