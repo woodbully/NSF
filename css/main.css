@@ -762,7 +762,7 @@ ul li:hover {
   display:block;
   position:relative;
   width:100%;
-  height:50px;
+  height:70px;
   overflow:hidden;
   font-size:0;
   line-height:0;
@@ -774,7 +774,7 @@ ul li:hover {
   transition:left 3.5s linear;
   display:inline-block;
   position:absolute;
-  height:50px;
+  height:70px;
   vertical-align:top;
   text-align:center;
 }
@@ -911,7 +911,9 @@ footer .footercontainer .sec.aboutus  {
   padding-bottom: 20px;
 }
 
-
+article p {
+  margin-top: 0;
+}
 
 
 
