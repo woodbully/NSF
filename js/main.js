@@ -22,13 +22,16 @@ $(".lineup-carousel").owlCarousel({
           items:1
       },
       576:{
-          items:1
+          items:2
       },
       768:{
           items:2
       },
-      992:{
+      880:{
           items:3
+      },
+      1300:{
+          items:4
       }
   }
 });
