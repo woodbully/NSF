@@ -32,7 +32,7 @@
                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- icon og style sheet -->
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
-
+                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -497,10 +497,25 @@
                                                        <li><span><i class="fa fa-map-marker" aria-hidden="true"></i></span><a>Nykøbing Sjælland, 4500</a></li> 
                                         </ul>
                                 </div>
-                        </div>
-                        <hr class="footerhr">
-                        <div class="copyrighttext"><p>Copyright C 2021 Nordstrand Festival</p></div>
+
+                                <div class="sec hurtigelinks">
+                                        <h2 class="footerh2">Pladsen</h2>
+                                        <div class="w3-row-padding">
+                                                <div class="w3-container w3-third">
+                                                  <img src="./img/kortoverpladsen.jpg" style="width:100%;cursor:pointer" 
+                                                  onclick="onClick(this)" class="w3-hover-opacity">
+                                                </div>
+
+
+                                                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                                                        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                                                        <div class="w3-modal-content w3-animate-zoom">
+                                                          <img id="img01" style="width:100%">
+                                                        </div>
+                                                      </div>
+                        </div>                       
                 </footer>
+                <div class="copyrighttext"><p>Copyright C 2021 Nordstrand Festival</p></div>
             
         </section>
 
