@@ -33,3 +33,37 @@ $(".lineup-carousel").owlCarousel({
   }
 });
 
+
+
+
+// wordpress API 
+
+
+const url = "http://idakronborg.dk/portfolio/wp-json/wp/v2/posts?_embed";
+
+fetch(url)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(posts) {
+    console.log(posts);
+    appendPosts(posts);
+  });
+
+// append wp posts to the DOM
+function appendPosts(posts) {
+  let htmlTemplate = "";
+  for (let post of posts) {
+    console.log(post);
+    htmlTemplate += `
+      <article class="wp-posts">
+      <h3>${post.title.rendered}</h3>
+        <div class="flex-box">
+        <p>${post.content.rendered}</p>
+        <div>
+      </article>
+    `;
+  }
+  document.querySelector('#content').innerHTML = htmlTemplate;
+}
+

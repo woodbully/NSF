@@ -22,6 +22,10 @@ console.log(window);
 
 
 
+
+
+// logo slider 
+
 $(document).ready(function(){
   
     var interval = 3500;
