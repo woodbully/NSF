@@ -193,52 +193,61 @@ a {
   font-family: 'Epilogue', sans-serif;
   font-weight: 900;
   font-size: 3em;
-
+padding-top: 8%;
+}
+.nav-mobile-menu ul li a{
+  color: var(--blacknsf);
 }
 
-ul li:hover {
+ul li:hover a {
   transition-timing-function: ease-in-out;
   transition-duration: 0.3s;
   transform: scale(1.2);
 }
 
-#li-billetter:hover {
+#li-billetter:hover a{
   color: var(--rednsf);
 }
 
-#li-information:hover {
+#li-information:hover a{
   color: var(--yellownsf);
 }
 
-#li-program:hover {
+#li-program:hover a{
   color: var(--bluensf);
 }
 
-#li-kontakt:hover {
+#li-kontakt:hover a{
   color: var(--purplensf);
 }
 
-@media (max-width: 991.98px) {
-  .nav-mobile-menu ul li {
-    font-size: 1.5em;
+@media (max-width: 1086px) {
+  .nav-mobile-menu ul li  {
+    font-size: 2em;
   }
 
-  #li-billetter {
+  #li-billetter a{
     color: var(--rednsf);
   }
 
-  #li-information {
+  #li-information a{
     color: var(--yellownsf);
   }
 
-  #li-program {
+  #li-program a{
     color: var(--bluensf);
   }
 
-  #li-kontakt {
+  #li-kontakt a{
     color: var(--purplensf);
   }
 
+}
+
+@media (max-width: 880px){
+  .nav-mobile-menu ul li  {
+    font-size: 1.5em;
+  }
 }
 
 
@@ -252,7 +261,7 @@ ul li:hover {
   cursor: pointer;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 9998;
 }
 
 #nav-mobile-bar-top {
@@ -285,6 +294,7 @@ ul li:hover {
 
 .active#nav-mobile-bar-middle {
   left: 90px;
+  background-color: var(--whitensf);
 }
 
 .active#nav-mobile-bar-top {
@@ -332,7 +342,7 @@ ul li:hover {
   text-decoration: none;
 }
 
-/* .nav-top .btn-grad {} */
+
 
 /*******************************/
 /********** Hero CSS ***********/
@@ -701,20 +711,6 @@ ul li:hover {
   margin-top: 30px;
 }
 
-/* .lineup .lineup-meta {
-  position: relative;
-  display: flex;
-  margin-bottom: 15px;
-}
-
-.lineup .lineup-meta p {
-  margin: 0 10px 0 0;
-  font-size: 13px;
-}
-
-.lineup .lineup-meta i {
-  margin-right: 5px;
-} */
 
 .lineup .lineup-item .btn-grad {
   align-items: center;
@@ -763,7 +759,7 @@ ul li:hover {
   display:block;
   position:relative;
   width:100%;
-  height:70px;
+  height:60px;
   overflow:hidden;
   font-size:0;
   line-height:0;
@@ -775,7 +771,7 @@ ul li:hover {
   transition:left 3.5s linear;
   display:inline-block;
   position:absolute;
-  height:70px;
+  height:60px;
   vertical-align:top;
   text-align:center;
 }
