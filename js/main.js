@@ -61,11 +61,12 @@ function appendPosts(posts) {
       <article class="wp-posts">
       <h3>${post.title.rendered}</h3>
         <div class="flex-box">
-        <p>${post.content.rendered}</p>
+        <p class"api-p">${post.content.rendered}</p>
         <div>
       </article>
     `;
   }
+
   document.querySelector('#content').innerHTML = htmlTemplate;
 }
 

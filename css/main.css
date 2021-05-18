@@ -798,7 +798,9 @@ ul li:hover a {
   }
 
 
-/* footer */
+/*******************************/
+/*********** footer  **********/
+/*******************************/
 
 .footercontainer {
  display: grid;
@@ -968,9 +970,35 @@ article p {
     width:auto;
     height: 70%;
   }
-  
 
 }
+
+
+/*******************************/
+/*********** wordpress API CSS **********/
+/*******************************/
+
+
+h3 {
+  font-weight: 900;
+  font-family: 'Epilogue', sans-serif;
+  
+}
+.wp-posts {
+  color: var(--whitensf);
+  font-size: 15px;
+  font-family:  'Montserrat', sans-serif !important;
+  font-weight: 600;
+  line-height: 0px;
+}
+
+#content {
+padding-right: 50px;
+margin-top: -150px;
+border-radius: 60px / 40px;
+text-align: right;
+}
+
 
 
 
