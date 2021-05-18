@@ -8,10 +8,10 @@ $(document).ready(function(){
     //alert(img_count);
     var imgs_displayed;  
       
-    if($(window).width() < 700){ imgs_displayed = 4;}
+    if($(window).width() < 750){ imgs_displayed = 3;}
     if($(window).width() < 500){ imgs_displayed = 2;}
     if($(window).width() < 300){ imgs_displayed = 1;}
-    if($(window).width() >700){ imgs_displayed = 5;}
+    if($(window).width() >700){ imgs_displayed = 4;}
    
     
     var slide_width = 100/imgs_displayed;
