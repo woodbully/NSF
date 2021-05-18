@@ -710,6 +710,24 @@ ul li:hover a {
 
 #lineups{
   margin-top: 30px;
+  transition: 0.1s;
+}
+
+#lineups:hover{
+border-bottom: 1px solid ;
+
+}
+
+
+#blanks {
+  height: 22px;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  #lineups {
+    text-decoration: underline;
+  }
 }
 
 
