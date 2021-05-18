@@ -193,7 +193,7 @@ a {
   font-family: 'Epilogue', sans-serif;
   font-weight: 900;
   font-size: 3em;
-padding-top: 8%;
+padding-top: 3%;
 }
 .nav-mobile-menu ul li a{
   color: var(--blacknsf);
@@ -224,6 +224,7 @@ ul li:hover a {
 @media (max-width: 1086px) {
   .nav-mobile-menu ul li  {
     font-size: 2em;
+    padding-top: 8%;
   }
 
   #li-billetter a{
