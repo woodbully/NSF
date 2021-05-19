@@ -1006,11 +1006,12 @@ h3 {
   
 }
 .wp-posts {
-  color: var(--blacknsf);
+  color: var(--whitensf);
   font-size: 15px;
   font-family:  'Montserrat', sans-serif !important;
   font-weight: 600;
   line-height: 0px;
+  text-align: end;
 }
 
 #content {
