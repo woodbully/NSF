@@ -7,7 +7,7 @@ $(".nav-mobile-button").click(function() {
   
 });
 
-// Blogs carousel
+// Program carousel
 $(".lineup-carousel").owlCarousel({
   autoplay: false,
   dots: false,

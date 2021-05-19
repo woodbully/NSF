@@ -193,7 +193,7 @@ a {
   font-family: 'Epilogue', sans-serif;
   font-weight: 900;
   font-size: 3em;
-padding-top: 3%;
+padding-top: 1.5%;
 }
 .nav-mobile-menu ul li a{
   color: var(--blacknsf);
@@ -224,7 +224,7 @@ ul li:hover a {
 @media (max-width: 1086px) {
   .nav-mobile-menu ul li  {
     font-size: 2em;
-    padding-top: 8%;
+    padding-top: 5%;
   }
 
   #li-billetter a{
@@ -843,6 +843,7 @@ font-weight: bold;
  grid-template-columns: 25% 25% 25% 25%;
  justify-content: center;
  text-align: left;
+ padding-top: 20px;
 }
 
 
@@ -862,9 +863,9 @@ flex-wrap: wrap;
  
 }
 
- .footerh2  {
-  text-decoration: underline;
-  text-decoration-color: var(--rednsf); 
+ .footerh2 {
+  border-bottom: 3px solid var(--rednsf);
+  padding-bottom: 5px;
   font-size: 20px;
   margin: 0px;
 }
@@ -968,6 +969,16 @@ article p {
 }
 .pladsen {
   margin: 30px;
+}
+
+body>footer>div>div.sec.pladsen>div>div.w3-container.w3-third{
+  width: 100%;
+  margin: 15px 0px;
+  padding: 0;
+}
+
+body>footer>div>div.sec.pladsen>div{
+  padding: 0;
 }
 
 @media screen and (max-width: 1142px) {
