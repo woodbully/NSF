@@ -7,7 +7,9 @@ $(document).ready(function(){
     var img_count = $('.slide').length;
     //alert(img_count);
     var imgs_displayed;  
-      
+
+
+    //alt efter hvor mange logoer der skal være i vinduet når det skaleres ned  
     if($(window).width() < 750){ imgs_displayed = 3;}
     if($(window).width() < 500){ imgs_displayed = 2;}
     if($(window).width() < 300){ imgs_displayed = 1;}
@@ -25,7 +27,9 @@ $(document).ready(function(){
     var b = 0;
     
     setInterval(function(){ 
-     
+
+
+     // hvilken side logoerne skal slide til 
     function slideEffect(){ 
       left = -slide_width;
       for(a=0; a<img_count; a++){
