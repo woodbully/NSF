@@ -15,7 +15,7 @@ function toggleMenu() {
 $(".lineup-carousel").owlCarousel({
   autoplay: false,
   dots: false,
-  loop: true,
+  loop: false,
   nav : true,
   navText : [
       '<i class="fa fa-chevron-left" aria-hidden="true"></i>',

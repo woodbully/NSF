@@ -661,24 +661,12 @@ ul li:hover a {
   position: relative;
   width: 100%;
   padding: 45px 0;
-  /* background-image: url(../img/watercolor.jpg);
+  background-image: url(../img/watercolor.jpg);
   background-repeat: no-repeat;
-opacity: 0.5;
-  background-size: cover; */
+  background-size: cover;
   overflow-x: hidden;
 }
 
-.lineup::before {
-  content: "";
-  background-image: url(../img/watercolor.jpg);
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.5;
-}
 
 .lineup .lineup-carousel {
   position: relative;
