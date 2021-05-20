@@ -1047,6 +1047,10 @@ margin-top: -150px;
 border-radius: 60px / 40px;
 }
 
+.grid-container a{
+  color: var(--whitensf);
+}
+
 
 
 

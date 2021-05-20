@@ -2,10 +2,14 @@
 
 // nav bar
 $(".nav-mobile-button").click(function() {
-  $('.nav-mobile-bar').toggleClass('active');
-  $('.nav-mobile-menu').toggleClass('active');
+  toggleMenu();
   
 });
+//close nav bar
+function toggleMenu() {
+    $('.nav-mobile-bar').toggleClass('active');
+  $('.nav-mobile-menu').toggleClass('active');
+}
 
 // Program carousel
 $(".lineup-carousel").owlCarousel({
@@ -59,12 +63,13 @@ function appendPosts(posts) {
     console.log(post);
     htmlTemplate += `
       <article class="wp-posts">
-      <a href="#info">
+      
       <h3>${post.title.rendered}</h3>
         <div class="flex-box">
         <p class"api-p">${post.content.rendered}</p>
+<a href="#info">læs mere</a>
         <div>
-        </a>
+       
       </article>
     `;
   }
