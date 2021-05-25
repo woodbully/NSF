@@ -1049,6 +1049,30 @@ top: 0px;
     margin:100px;
 }
 
+/*******************************/
+/****** information side Styling *******/
+/*******************************/
+
+.infoside-banner {
+
+  width: 100%;
+  background-image: url(../billeder/infosidebanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 100px;
+}
+
+.informationsfont {
+  color: var(--blacknsf);
+  font-weight: 900;
+  font-size: 3.5vw;
+  padding-top: 100px;
+  
+}
+
+
 
 
 /*******************************/
