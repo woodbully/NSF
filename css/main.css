@@ -9,7 +9,9 @@
   --blacknsf: #000000;
 }
 
-/* ---------- general styling ---------- */
+/*******************************/
+/****** General Styling *******/
+/*******************************/
 html {
   color: var(--blacknsf);
   font-family: 'Montserrat', sans-serif !important;
@@ -51,7 +53,7 @@ a {
 }
 
 
-/* ---------- tabbar styling ---------- */
+/*tabbar styling*/
 .tabbar {
   background-color: var(--rednsf);
   position: fixed;
@@ -70,7 +72,6 @@ a {
   background-image: linear-gradient(to right, #cb1339 0%, #f77842 51%, #f9ce4e 100%)
 }
 
-/* Style the links inside the navigation bar */
 .tabbar a {
   display: inline-block;
   color: var(--whitensf);
@@ -90,7 +91,6 @@ a {
 }
 
 
-
 @media (min-width: 1087px) {
   .tabbar {
     display: none;
@@ -102,7 +102,7 @@ a {
   }
 }
 
-/* ---------- page styling ---------- */
+/*page styling*/
 .page {
   display: none;
   /*min heigh is screen heigh minus height of tab and top bar */
@@ -113,7 +113,7 @@ a {
 
 }
 
-/* ---------- logo styling ---------- */
+/*logo styling*/
 .logo {
   max-width: 50%;
   margin: auto;
@@ -126,8 +126,8 @@ a {
   height: auto;
 }
 
-/* ---------- animations ---------- */
-/* fade in */
+/*animations*/
+
 @keyframes fadeIn {
   from {
     opacity: 0
@@ -138,9 +138,7 @@ a {
   }
 }
 
-/****************
-      nav bar
-****************/
+/*nav bar*/
 .nav-mobile {
   width: 100%;
   height: 15%;
@@ -150,8 +148,6 @@ a {
   top: 0;
   left: 0;
   z-index: 9999;
-  /* align-items: center;
-  flex-direction: row; */
 }
 
 .nav-top {
@@ -252,9 +248,7 @@ ul li:hover a {
 }
 
 
-/****************
-     toggle BUTTON
-****************/
+/*toggle BUTTON*/
 .nav-mobile-button {
   overflow: hidden;
   width: 90px;
@@ -343,11 +337,200 @@ ul li:hover a {
   text-decoration: none;
 }
 
+/*footer*/
+
+.footercontainer {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  justify-content: center;
+  text-align: left;
+  padding-top: 20px;
+}
 
 
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: var(--blacknsf);
+  color: var(--whitensf);
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+.footercontainer .sec.aboutus {
+  margin: 30px;
+
+}
+
+.footerh2 {
+  border-bottom: 3px solid var(--rednsf);
+  padding-bottom: 5px;
+  font-size: 20px;
+  margin: 0px;
+}
+
+.pfooter {
+  line-height: 20px;
+  font-size: 15px;
+  color: grey;
+}
+
+.sci {
+  margin-top: 20px;
+  display: flex;
+}
+
+
+
+.sci li {
+  list-style: none;
+
+}
+
+.sci li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.sci li a:hover {
+  background: var(--rednsf);
+}
+
+.sci li a .fa {
+  color: var(--whitensf);
+}
+
+.hurtigelinks {
+  position: relative;
+  margin: 30px;
+
+}
+
+.hurtigelinks ul li a {
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+  color: grey;
+}
+
+.footerlinks:hover {
+  transition: none;
+}
+
+.kontakt {
+  margin: 30px;
+}
+
+.kontakt li a {
+  display: flex;
+  margin-bottom: 10px;
+  color: grey;
+}
+
+.kontakt .info {
+  position: relative;
+}
+
+.kontakt .info li {
+  display: flex;
+  line-height: 35px;
+}
+
+.kontakt li span:nth-child(1) {
+  color: var(--whitensf);
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.kontakt .info p {
+  margin: 0;
+}
+
+.copyrighttext {
+  width: 100%;
+  background: var(--blacknsf);
+  color: grey;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+article p {
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.pladsen {
+  margin: 30px;
+}
+
+body>footer>div>div.sec.pladsen>div>div.w3-container.w3-third {
+  width: 100%;
+  margin: 15px 0px;
+  padding: 0;
+}
+
+body>footer>div>div.sec.pladsen>div {
+  padding: 0;
+}
+
+@media screen and (max-width: 1142px) {
+
+  .footercontainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .slide img {
+    width: auto;
+    height: 80%;
+  }
+
+  .backersfont,
+  h2 {
+    font-size: 40px;
+  }
+
+}
+
+@media screen and (max-width:555px) {
+
+  footer .footercontainer {
+    text-align: center;
+    grid-template-columns: 100%;
+  }
+
+  .info li a {
+    text-align: center;
+    align-items: center;
+  }
+
+  .sci {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slide img {
+    width: auto;
+    height: 70%;
+  }
+
+}
+
 /*******************************/
-/********** Hero CSS ***********/
+/****** Homepage Styling *******/
 /*******************************/
+
+/* Hero styling */
 
 .hero {
   width: 100%;
@@ -467,9 +650,7 @@ ul li:hover a {
 
 
 
-/*******************************/
-/********** forside boxe ***********/
-/*******************************/
+/*Link boxe*/
 
 .flexcontaioner-boxe {
   width: 100%;
@@ -652,9 +833,7 @@ ul li:hover a {
 
 
 
-/*******************************/
-/*********** lineup CSS **********/
-/*******************************/
+/*lineup CSS*/
 
 
 .lineup {
@@ -699,9 +878,7 @@ ul li:hover a {
   font-weight: 600;
   opacity: 1;
 }
-/* #home>div.lineup>div>div.section-header.text-center.wow.zoomIn>h2{
-  color: var(--whitensf);
-} */
+
 
 .lineup .lineup-text p {
   margin-bottom: 10px;
@@ -778,7 +955,8 @@ font-weight: bold;
 
 
 
-/* logo slider */
+/* backers slider */
+
 .slider_container {
   display:block;
   position:relative;
@@ -820,224 +998,41 @@ font-weight: bold;
   
   }
 
-
-/*******************************/
-/*********** footer  **********/
-/*******************************/
-
-.footercontainer {
- display: grid;
- grid-template-columns: 25% 25% 25% 25%;
- justify-content: center;
- text-align: left;
- padding-top: 20px;
-}
+  /*wordpress API CSS*/
 
 
-footer {
-  position: relative;
-  width: 100%;
-  height: auto;
-  background: var(--blacknsf);
-  color: var(--whitensf);
-  justify-content: space-around;
-flex-wrap: wrap;
+  h3 {
+    font-weight: 900;
+    font-family: 'Epilogue', sans-serif;
 
-}
-
-.footercontainer .sec.aboutus  {
-  margin: 30px;
- 
-}
-
- .footerh2 {
-  border-bottom: 3px solid var(--rednsf);
-  padding-bottom: 5px;
-  font-size: 20px;
-  margin: 0px;
-}
-
-.pfooter {
-  line-height: 20px;
-  font-size: 15px;
-  color: grey;
-}
-
-.sci {
-  margin-top: 20px;
-  display: flex;
-}
-
-
-
-.sci li 
-{
-  list-style: none;
-  
-}
-
-.sci li a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background: #222;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 10px;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.sci li a:hover {
-  background: var(--rednsf);
-}
-
-.sci li a .fa {
-  color: var(--whitensf);
-}
-
-.hurtigelinks {
-  position: relative;
-  margin: 30px;
-  
-}
-
-.hurtigelinks ul li a {
-  text-decoration: none;
-  margin-bottom: 10px;
-  display: inline-block;
-  color: grey;
-}
-
-.footerlinks:hover {
-  transition: none; 
-}
-
-.kontakt {
-  margin: 30px;
-}
-
-.kontakt li a  {
-  display: flex;
-  margin-bottom: 10px;
-  color: grey;
-}
-.kontakt .info {
-  position: relative;
-}
-
-.kontakt .info li {
-  display: flex;
-  line-height: 35px;
-}
-
-.kontakt li span:nth-child(1) {
-  color: var(--whitensf);
-  font-size: 20px;
-  margin-right: 10px;
-}
-
-.kontakt .info p {
-  margin: 0;
-}
-
-.copyrighttext {
-  width: 100%;
-  background: var(--blacknsf);
-  color: grey;
-  text-align: center;
-  padding-bottom: 20px;
-}
-
-article p {
-  margin: 0 auto;
-  padding-top: 20px;
-}
-.pladsen {
-  margin: 30px;
-}
-
-body>footer>div>div.sec.pladsen>div>div.w3-container.w3-third{
-  width: 100%;
-  margin: 15px 0px;
-  padding: 0;
-}
-
-body>footer>div>div.sec.pladsen>div{
-  padding: 0;
-}
-
-@media screen and (max-width: 1142px) {
-
-  .footercontainer {
-    display: grid;
- grid-template-columns: 50% 50% ;
   }
 
-  .slide img {
-    width:auto;
-    height: 80%;
-  }
-  .backersfont, h2 {
-    font-size: 40px;
-  }
-
-}
-
-@media screen and (max-width:555px) {
-
-  footer .footercontainer {
-    text-align: center;
- grid-template-columns: 100%;
+  .wp-posts {
+    color: var(--whitensf);
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 600;
+    line-height: 0px;
+    text-align: end;
   }
 
-  .info li a {
-    text-align: center;
- align-items: center;
+  #content {
+    padding-right: 50px;
+    margin-top: -150px;
+    border-radius: 60px / 40px;
   }
 
-  .sci {
-    justify-content: center;
-    align-items: center;
-    }
-
-  .slide img {
-    width:auto;
-    height: 70%;
+  .grid-container a {
+    color: var(--whitensf);
   }
-
-}
 
 
 /*******************************/
-/*********** wordpress API CSS **********/
+/****** Program Styling *******/
 /*******************************/
 
 
-h3 {
-  font-weight: 900;
-  font-family: 'Epilogue', sans-serif;
-  
-}
-.wp-posts {
-  color: var(--whitensf);
-  font-size: 15px;
-  font-family:  'Montserrat', sans-serif !important;
-  font-weight: 600;
-  line-height: 0px;
-  text-align: end;
-}
 
-#content {
-padding-right: 50px;
-margin-top: -150px;
-border-radius: 60px / 40px;
-}
-
-.grid-container a{
-  color: var(--whitensf);
-}
 
 
 
