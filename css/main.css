@@ -27,7 +27,7 @@ body {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2vw;
   font-weight: 900;
   letter-spacing: 1px;
   font-family: 'Epilogue', sans-serif;
@@ -35,7 +35,7 @@ h1 {
 
 h2 {
   font-weight: 900;
-  font-size: 1.5em;
+  font-size: 1.5vw;
   margin-bottom: 50px; 
     letter-spacing: 1px;
     font-family: 'Epilogue',
@@ -362,7 +362,7 @@ footer {
 }
 
 footer a{
-  
+
 }
 
 .footercontainer .sec.aboutus {
@@ -501,8 +501,7 @@ body>footer>div>div.sec.pladsen>div {
     height: 80%;
   }
 
-  .backersfont,
-  h2 {
+ #home>h2 {
     font-size: 40px;
   }
 
@@ -600,7 +599,7 @@ body>footer>div>div.sec.pladsen>div {
     padding: 0 15px;
   }
 
-  .hero .hero-text h1, h2 {
+  .hero .hero-text h1 {
     font-size: 5vw;
   }
 
@@ -893,6 +892,18 @@ body>footer>div>div.sec.pladsen>div {
 .lineup .lineup-item li#lineups a {
   color: var(--blacknsf);
 }
+.heading1 {
+  color: var(--whitensf);
+  font-size: 3.5vw;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 1142px){
+  .heading1{
+    font-size: 40px;
+  }
+  
+}
 
 
 #lineups{
@@ -1044,9 +1055,9 @@ font-weight: bold;
     width: 100%;
     background-image: url(../billeder/concert-768722_1280.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: cover;
-top: 0px;
+    background-position: 10% 10%;
 }
 
 .hero2 .hero-text h1 {
@@ -1094,6 +1105,12 @@ top: 0px;
 .program-grid ul {
   padding: 0px;
 }
+
+.heading2 {
+    font-size: 3.5vw;
+    font-weight: 900;
+}
+
 
 /*******************************/
 /****** information side Styling *******/
