@@ -112,6 +112,7 @@ a {
   animation: fadeIn 0.4s;
   /* padding equals height of tabbar and topbar */
   padding-bottom: 55px;
+  background-color: var(--whitensf);
 
 }
 
@@ -361,9 +362,6 @@ footer {
 
 }
 
-footer a{
-
-}
 
 .footercontainer .sec.aboutus {
   margin: 30px;
@@ -892,9 +890,10 @@ body>footer>div>div.sec.pladsen>div {
 .lineup .lineup-item li#lineups a {
   color: var(--blacknsf);
 }
+
 .heading1 {
   color: var(--whitensf);
-  font-size: 3.5vw;
+  font-size: 2.8vw;
   font-weight: 900;
 }
 
@@ -1009,7 +1008,7 @@ font-weight: bold;
 .backersfont{
   color: var(--rednsf);
     font-weight: 900;
-    font-size: 3.5vw;
+    font-size: 2.8vw;
     margin-top: 100px;
     margin-bottom: 100px;
   
@@ -1127,6 +1126,17 @@ font-weight: bold;
 .heading2 {
     font-size: 3.5vw;
     font-weight: 900;
+}
+
+#program-info {
+  color: var(--rednsf);
+}
+
+@media screen and (max-width: 1142px) {
+  .heading2 {
+    font-size: 40px;
+  }
+
 }
 
 
