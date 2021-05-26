@@ -65,7 +65,7 @@ function appendPosts(posts) {
       <h3>${post.title.rendered}</h3>
         <div class="flex-box">
         <p class"api-p">${post.content.rendered}</p>
-<a href="#info">læs mere<i class="fa fa-angle-right"></i></a>
+<a href="#info">Læs mere<i class="fa fa-angle-right"></i></a>
         <div>
        
       </article>
