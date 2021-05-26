@@ -1021,12 +1021,13 @@ font-weight: bold;
   h3 {
     font-weight: 900;
     font-family: 'Epilogue', sans-serif;
+    font-size: 30px;
 
   }
 
   .wp-posts {
     color: var(--whitensf);
-    font-size: 15px;
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif !important;
     font-weight: 600;
     line-height: 0px;
@@ -1034,22 +1035,18 @@ font-weight: bold;
   }
 
   #content {
-    padding-right: 50px;
+    padding: 20px;
     margin-top: -160px;
-    border-radius: 10px 0px 0px 0px;
-    width: 20%;
+    border-radius: 10px 0px 0px 10px;
     float: right;
-    background-color: hotpink;
+    background-color: var(--rednsf);
   }
 
-  .grid-container a .fa-angle-right {
+  .grid-container a, .grid-container a .fa-angle-right {
     color: var(--whitensf);
     margin-left: 5px;
+    font-size: 14px;
   }
-
-
-
-
 
   .slide-right {
     animation: 1.5s slide-right 0.5s forwards;
