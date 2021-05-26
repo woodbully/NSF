@@ -361,9 +361,7 @@ footer {
 
 }
 
-footer a{
 
-}
 
 .footercontainer .sec.aboutus {
   margin: 30px;
@@ -1015,7 +1013,7 @@ font-weight: bold;
   
   }
 
-  /*wordpress API CSS*/
+  /*wordpress API CSS og slider*/
 
 
   h3 {
@@ -1037,7 +1035,6 @@ font-weight: bold;
     padding-right: 50px;
     margin-top: -160px;
     border-radius: 10px 0px 0px 0px;
-    width: 20%;
     float: right;
     background-color: hotpink;
   }
@@ -1046,8 +1043,6 @@ font-weight: bold;
     color: var(--whitensf);
     margin-left: 5px;
   }
-
-
 
 
 
