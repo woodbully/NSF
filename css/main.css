@@ -1018,13 +1018,37 @@ font-weight: bold;
 
   #content {
     padding-right: 50px;
-    margin-top: -150px;
-    border-radius: 60px / 40px;
+    margin-top: -160px;
+    border-radius: 10px 0px 0px 0px;
+    width: 20%;
+    float: right;
+    background-color: hotpink;
   }
 
-  .grid-container a {
+  .grid-container a .fa-angle-right {
     color: var(--whitensf);
+    margin-left: 5px;
   }
+
+
+
+  .grid-container a:hover {
+    
+  }
+
+
+  .slide-right {
+    animation: 1.5s slide-right 0.5s forwards;
+    transform:translateX(100%);
+  }
+
+  @keyframes slide-right {
+    to {
+      transform:translateX(0);
+    }
+  }
+
+
 
 
 /*******************************/
@@ -1054,7 +1078,6 @@ top: 0px;
 /*******************************/
 
 .infoside-banner {
-
   width: 100%;
   background-image: url(../billeder/infosidebanner.jpg);
   background-repeat: no-repeat;
@@ -1065,11 +1088,10 @@ top: 0px;
 }
 
 .informationsfont {
-  color: var(--blacknsf);
+  color: var(--whitensf);
   font-weight: 900;
   font-size: 3.5vw;
   padding-top: 100px;
-  
 }
 
 
