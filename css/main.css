@@ -1153,7 +1153,7 @@ font-weight: bold;
   position: relative;
 }
 
-.forsidebillede-home  .slide-forside2222 {
+.forsidebillede-home  .slideforside2222 {
 position: absolute;
 left: 0;
 top: 0;
@@ -1166,7 +1166,7 @@ padding: 0 20px;
 animation: slide-forside2222 2s ease;
 }
 
-.forsidebillede-home  .slide-forside2222.active {
+.forsidebillede-home  .slideforside2222.active {
 display: flex;
 }
 
