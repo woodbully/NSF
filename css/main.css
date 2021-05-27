@@ -1149,9 +1149,11 @@ font-weight: bold;
 
 .forsidebillede-home {
   height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 
-.slide-forside2222 {
+.forsidebillede-home  .slide-forside2222 {
 position: absolute;
 left: 0;
 top: 0;
@@ -1159,11 +1161,82 @@ width: 100%;
 height: 100%;
 background-size: cover;
 background-position: 50% 50%;
+display: none;
+padding: 0 20px;
+animation: slide-forside2222 2s ease;
+}
+
+.forsidebillede-home  .slide-forside2222.active {
 display: flex;
+}
+
+
+@keyframes slide-forside2222 {
+
+  0% {
+    transform:scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
 }
 
 .billedeslider-container {
   max-width: 1170px;
-  margin: auto;
+  margin: auto; 
+  text-align: left;
+}
+
+.forsidebillede-home .billedeslider-container  {
   flex-grow: 1;
+}
+
+
+.billedeslider-container .caption h2 {
+  color: var(--blacknsf);
+  margin-bottom: 0px;
+  font-weight: 900;
+  font-size: 3.5vw;
+  text-align: left;
+  margin-top: 0;
+}
+
+.billedeslider-container .caption p {
+  color: var(--blacknsf);
+  font-size: 20px;
+  margin-bottom: 5%;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+.forsidebillede-home .controls .prev,
+.forsidebillede-home .controls .next
+ {
+  position: absolute;
+  z-index: 2;
+  top: 55%;
+  height: 40px;
+  width: 40px;
+  margin-top: -20px;
+  color: var(--rednsf);
+  background-color: var(--whitensf);
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.forsidebillede-home .controls .prev:hover,
+.forsidebillede-home .controls .next:hover {
+background-color: var(--blacknsf);
+}
+ 
+
+.forsidebillede-home .controls .prev {
+  left: 0;
+}
+
+.forsidebillede-home .controls .next {
+  right: 0;
 }
