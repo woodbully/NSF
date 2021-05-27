@@ -1109,17 +1109,6 @@ font-weight: bold;
   width: 100%;
 }
 
-.grid-item .icon-list {
-  display: block;
-  width: 100%;
-}
-
-.iconlist li {
-  list-style: none;
-  text-align: left;
-
-}
-
 .program-grid ul {
   padding: 0px;
 }
@@ -1127,6 +1116,20 @@ font-weight: bold;
 .heading2 {
     font-size: 3.5vw;
     font-weight: 900;
+}
+
+.table-icon{
+max-width: 60px;
+}
+.table-icon img{
+  height: 100%;
+}
+.table-info{
+  text-align: left;
+
+}
+.call-to-action button{
+margin-top: 30%;
 }
 
 #program-info {
