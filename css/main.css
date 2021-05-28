@@ -1051,10 +1051,10 @@ h3 {
 }
 
 
-.slide-right {
+/* .slide-right {
   animation: 1.5s slide-right 0.5s forwards;
   transform: translateX(100%);
-}
+} */
 
 @keyframes slide-right {
   to {
@@ -1252,4 +1252,11 @@ table {
 
 .forsidebillede-home .controls .next {
   right: 0;
+}
+
+.grid-container2{
+  position:absolute;
+  right:0;
+  top:300px;
+  z-index: 9998;
 }
