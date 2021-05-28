@@ -2,6 +2,7 @@
 const slides=document.querySelector(".slider-forside111").children;
 const prev=document.querySelector(".prev");
 const next=document.querySelector(".next");
+const indicator=document.querySelector(".indicator");
 let index=0
 
 prev.addEventListener("click",function(){
@@ -12,6 +13,20 @@ next.addEventListener("click",function(){
 nextSlideforside2222()
 
 })
+
+// Her laver vi cirkel indicatorer 
+function circleIndicator(){
+ for(let i=0; i< slides.length; i++){
+     const div=document.createElement("div");
+     div.innerHTML=i=1;
+     div.setAttribute("onclick","indicateSlideforside2222(this)")
+     indicator.appendChild(div);
+     
+ }
+ circleIndicator();
+ 
+}
+
 
 
 //her for vi functionen til at trykke tilbage i slidsene
