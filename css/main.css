@@ -1051,17 +1051,16 @@ h3 {
 }
 
 
-/* .slide-right {
+.slide-right {
   animation: 1.5s slide-right 0.5s forwards;
   transform: translateX(100%);
-} */
+} 
 
 @keyframes slide-right {
   to {
     transform: translateX(0);
   }
 }
-
 
 
 
@@ -1157,7 +1156,7 @@ table {
 
 
 /*******************************/
-/******  side Styling *******/
+/******  slide til forside Styling *******/
 /*******************************/
 
 .forsidebillede-home {
