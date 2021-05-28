@@ -119,7 +119,7 @@
                         <div class="wrapper">
                                 <div class="card">
                                         <div class="card1">
-                                                <a href="#program">
+                                                <a href="#program#mad-drikke">
                                                         <img src="./img/madboxforside.jpg" alt="madogdrikke">
                                                         <h2> Mad & Drikke</h2>
                                                         <div class="info">
@@ -132,7 +132,7 @@
 
                                 <div class="card">
                                         <div class="card2">
-                                                <a href="#program">
+                                                <a href="#program#musik">
                                                         <img src="./img/Musikboxforside.jpg" alt="musik">
                                                         <h2>Musik</h2>
                                                         <div class="info">
@@ -147,7 +147,7 @@
 
                                 <div class="card">
                                         <div class="card3">
-                                                <a href="#program">
+                                                <a href="#program#foredrag">
                                                         <img src="./img/Tivoliboxforside.jpg" alt="tivoli">
                                                         <h2>Oplevelser</h2>
                                                         <div class="info">
@@ -539,7 +539,9 @@
 
         <!-- info page -->
         <section id="info" class="page">
-                
+                <div class="slide-right">
+                                        <section id="content" class="grid-container2"></section>
+                                </div>
 
                 <section class="forsidebillede-home">
 
@@ -644,32 +646,33 @@
                         </div>
                 </div>
                 <!-- musik -->
+                <section id="musik">
                 <h2 class="heading2">Musik</h2>
                 <div class="program-grid">
                         <div class="grid-item">
                                 <h4>Malte Ebert</h4>
                                 <img src="img/kunstner/malteebert.jpg" alt="">
                               
-                                <table style="width:100%">
+                                <table>
 
                                         <tr>
-                                                <td><img src="/billeder/scene.svg" alt="" style="height:30px"></td>
-                                                <td>scene 1</td>
+                                                <td class="table-icon"><img src="/billeder/scene.svg" alt="" style="height:30px"></td>
+                                                <td class="table-info">Scene 1</td>
 
                                         </tr>
                                         <tr>
-                                                <td><i class="far fa-calendar-alt"></i></td>
-                                                <td>6.august</td>
-                                                <td><button class="btn-grad"><a
+                                                <td class="table-icon"><i class="far fa-calendar-alt"></i></td>
+                                                <td class="table-info">6.august</td>
+                                                <td class="call-to-action"><div class="padding"><button class="btn-grad"><a
                                                                         href="https://www.billetlugen.dk/event/nordstrand-food-music-festival-6-august-2021-nordstrand-food-music-festival-13356298/"
                                                                         target=”_blank” target=”_blank”>Billet<i
                                                                                 class="fa fa-external-link"></i></a>
-                                                        </button></td>
+                                                        </button></div></td>
                                         </tr>
                                         <tr>
-                                                <td><i class="far fa-clock"></i></td>
-                                                <td>16.00</td>
-                                                <td> <a id="program-info" href="">Læs mere</a></td>
+                                                <td class="table-icon"><i class="far fa-clock"></i></td>
+                                                <td class="table-info">16.00</td>
+                                                <td class="call-to-action"> <a id="program-info" href="">Læs mere<i class="fa fa-angle-right"></i></a></td>
                                         </tr>
                                 </table>
 
@@ -696,9 +699,11 @@
                                 </div>
                         </div>
                 </div>
+                </section>
                 <!-- musik end -->
                 <hr class="solid" style="border-top: 10px solid var(--bluensf);margin-bottom: 20px;">
                 <!-- foredrag -->
+                <section id="foredrag">
                 <h2 class="heading2">Foredrag</h2>
                 <div class="program-grid">
                         <div class="grid-item">
@@ -706,7 +711,7 @@
 
                                 <h4>Kunstnernavn</h4>
                                 <img src="billeder/Skærmbillede 2021-04-29 164036.png" alt="">
-                                <div class="icon-list">
+                                <div class="kunstner-info">
                                         <ul>
                                                 <li> <img src="/billeder/scene.svg" alt=""> Scene 1</li>
                                                 <li> <i class="far fa-calendar-alt">6.august</i></li>
@@ -745,9 +750,11 @@
 
 
                 </div>
+                </section>
                 <!-- foredrag end-->
                 <hr class="solid" style="border-top: 10px solid var(--bluensf);margin-bottom: 20px;">
                 <!-- Mad & Drikke -->
+                <section id="mad-drikke">
                 <h2 class="heading2">Mad & Drikke</h2>
                 <div class="program-grid">
                         <div class="grid-item">
@@ -794,6 +801,7 @@
 
 
                 </div>
+                </section>
                 <!-- Mad & Drikke end -->
                 <hr class="solid" style="border-top: 10px solid var(--bluensf);margin-bottom: 20px;">
                 <!-- backers  -->

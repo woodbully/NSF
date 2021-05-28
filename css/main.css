@@ -36,9 +36,9 @@ h1 {
 h2 {
   font-weight: 900;
   font-size: 1.5vw;
-  margin-bottom: 50px; 
-    letter-spacing: 1px;
-    font-family: 'Epilogue',
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+  font-family: 'Epilogue',
     sans-serif;
 }
 
@@ -66,8 +66,8 @@ a {
   border-radius: 10px;
   background-size: 200% auto;
   display: flex;
-   justify-content: center;
-   align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .tabbar {
@@ -98,6 +98,7 @@ a {
     display: none;
   }
 }
+
 @media (max-width: 660px) {
   .tabbar {
     left: 50%;
@@ -192,9 +193,10 @@ a {
   font-family: 'Epilogue', sans-serif;
   font-weight: 900;
   font-size: 3em;
-padding-top: 1.5%;
+  padding-top: 1.5%;
 }
-.nav-mobile-menu ul li a{
+
+.nav-mobile-menu ul li a {
   color: var(--blacknsf);
 }
 
@@ -204,48 +206,48 @@ ul li:hover a {
   transform: scale(1.2);
 }
 
-#li-billetter:hover a{
+#li-billetter:hover a {
   color: var(--rednsf);
 }
 
-#li-information:hover a{
+#li-information:hover a {
   color: var(--yellownsf);
 }
 
-#li-program:hover a{
+#li-program:hover a {
   color: var(--bluensf);
 }
 
-#li-kontakt:hover a{
+#li-kontakt:hover a {
   color: var(--purplensf);
 }
 
 @media (max-width: 1086px) {
-  .nav-mobile-menu ul li  {
+  .nav-mobile-menu ul li {
     font-size: 2em;
     padding-top: 5%;
   }
 
-  #li-billetter a{
+  #li-billetter a {
     color: var(--rednsf);
   }
 
-  #li-information a{
+  #li-information a {
     color: var(--yellownsf);
   }
 
-  #li-program a{
+  #li-program a {
     color: var(--bluensf);
   }
 
-  #li-kontakt a{
+  #li-kontakt a {
     color: var(--purplensf);
   }
 
 }
 
-@media (max-width: 880px){
-  .nav-mobile-menu ul li  {
+@media (max-width: 880px) {
+  .nav-mobile-menu ul li {
     font-size: 1.5em;
   }
 }
@@ -499,7 +501,7 @@ body>footer>div>div.sec.pladsen>div {
     height: 80%;
   }
 
- #home>h2 {
+  #home>h2 {
     font-size: 40px;
   }
 
@@ -863,7 +865,7 @@ body>footer>div>div.sec.pladsen>div {
   margin-right: 30px;
   background-color: var(--whitensf);
   border-radius: 10px;
-  
+
 }
 
 .lineup .lineup-page .lineup-item {
@@ -897,21 +899,21 @@ body>footer>div>div.sec.pladsen>div {
   font-weight: 900;
 }
 
-@media screen and (max-width: 1142px){
-  .heading1{
+@media screen and (max-width: 1142px) {
+  .heading1 {
     font-size: 40px;
   }
-  
+
 }
 
 
-#lineups{
+#lineups {
   margin-top: 30px;
 }
 
 .lineup .lineup-item li#lineups a:hover {
-color: var(--rednsf);
-font-weight: bold;
+  color: var(--rednsf);
+  font-weight: bold;
 
 }
 
@@ -974,90 +976,91 @@ font-weight: bold;
 /* backers slider */
 
 .slider_container {
-  display:block;
-  position:relative;
-  width:100%;
-  height:60px;
-  overflow:hidden;
-  font-size:0;
-  line-height:0;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
   margin-bottom: 100px;
 }
 
 .slide {
-  -webkit-transition:left 3.5s linear;
-  transition:left 3.5s linear;
-  display:inline-block;
-  position:absolute;
-  height:60px;
-  vertical-align:top;
-  text-align:center;
+  -webkit-transition: left 3.5s linear;
+  transition: left 3.5s linear;
+  display: inline-block;
+  position: absolute;
+  height: 60px;
+  vertical-align: top;
+  text-align: center;
 }
 
 .slide img {
-  width:auto;
-  height:100%;
+  width: auto;
+  height: 100%;
 }
 
 
 .notransition {
-  -webkit-transition:none;
-  transition:none;
+  -webkit-transition: none;
+  transition: none;
 }
 
-.backersfont{
+.backersfont {
   color: var(--rednsf);
-    font-weight: 900;
-    font-size: 2.8vw;
-    margin-top: 100px;
-    margin-bottom: 100px;
-  
+  font-weight: 900;
+  font-size: 2.8vw;
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+}
+
+/*wordpress API CSS og slider*/
+
+
+h3 {
+  font-weight: 900;
+  font-family: 'Epilogue', sans-serif;
+  font-size: 25px;
+
+}
+
+.wp-posts {
+  color: var(--whitensf);
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 600;
+  line-height: 0px;
+  text-align: end;
+}
+
+#content {
+  padding: 20px;
+  margin-top: -160px;
+  border-radius: 10px 0px 0px 10px;
+  float: right;
+  background-color: rgba(203, 19, 57, 0.8);
+}
+
+.grid-container a,
+.grid-container a .fa-angle-right {
+  color: var(--whitensf);
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+
+/* .slide-right {
+  animation: 1.5s slide-right 0.5s forwards;
+  transform: translateX(100%);
+} */
+
+@keyframes slide-right {
+  to {
+    transform: translateX(0);
   }
-
-  /*wordpress API CSS og slider*/
-
-
-  h3 {
-    font-weight: 900;
-    font-family: 'Epilogue', sans-serif;
-    font-size: 25px;
-
-  }
-
-  .wp-posts {
-    color: var(--whitensf);
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif !important;
-    font-weight: 600;
-    line-height: 0px;
-    text-align: end;
-  }
-
-  #content {
-    padding: 20px;
-    margin-top: -160px;
-    border-radius: 10px 0px 0px 10px;
-    float: right;
-    background-color: rgba(203, 19, 57, 0.8);
-  }
-
-  .grid-container a, .grid-container a .fa-angle-right {
-    color: var(--whitensf);
-    margin-left: 5px;
-    font-size: 14px;
-  }
-
-
-  .slide-right {
-    animation: 1.5s slide-right 0.5s forwards;
-    transform:translateX(100%);
-  }
-
-  @keyframes slide-right {
-    to {
-      transform:translateX(0);
-    }
-  }
+}
 
 
 
@@ -1069,22 +1072,22 @@ font-weight: bold;
 
 /* hero-styling */
 
-.hero2{
-    width: 100%;
-    background-image: url(../billeder/concert-768722_1280.jpg);
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    background-size: cover;
-    background-position: 10% 10%;
+.hero2 {
+  width: 100%;
+  background-image: url(../billeder/concert-768722_1280.jpg);
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-position: 10% 10%;
 }
 
 .hero2 .hero-text h1 {
-    color: var(--whitensf);
-    margin-bottom: 0px;
-    font-weight: 900;
-    font-size: 3.5vw;
-    text-align: center;
-    margin:100px;
+  color: var(--whitensf);
+  margin-bottom: 0px;
+  font-weight: 900;
+  font-size: 3.5vw;
+  text-align: center;
+  margin: 100px;
 }
 
 /*sectioner CSS */
@@ -1109,24 +1112,34 @@ font-weight: bold;
   width: 100%;
 }
 
-.grid-item .icon-list {
-  display: block;
-  width: 100%;
-}
-
-.iconlist li {
-  list-style: none;
-  text-align: left;
-
-}
-
 .program-grid ul {
   padding: 0px;
 }
 
 .heading2 {
-    font-size: 3.5vw;
-    font-weight: 900;
+  font-size: 3.5vw;
+  font-weight: 900;
+}
+
+table {
+  width: 100%;
+}
+
+.table-icon {
+  max-width: 60px;
+}
+
+.table-icon img {
+  height: 100%;
+}
+
+.table-info {
+  text-align: left;
+
+}
+
+.padding {
+  padding:20%
 }
 
 #program-info {
@@ -1153,41 +1166,42 @@ font-weight: bold;
   position: relative;
 }
 
-.forsidebillede-home  .slideforside2222 {
-position: absolute;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-background-size: cover;
-background-position: 50% 50%;
-display: none;
-padding: 0 20px;
-animation: slide-forside2222 2s ease;
+.forsidebillede-home .slideforside2222 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  display: none;
+  padding: 0 20px;
+  animation: slide-forside2222 2s ease;
 }
 
-.forsidebillede-home  .slideforside2222.active {
-display: flex;
+.forsidebillede-home .slideforside2222.active {
+  display: flex;
 }
 
 
 @keyframes slide-forside2222 {
 
   0% {
-    transform:scale(1.1);
+    transform: scale(1.1);
   }
-  100%{
+
+  100% {
     transform: scale(1);
   }
 }
 
 .billedeslider-container {
   max-width: 1170px;
-  margin: auto; 
+  margin: auto;
   text-align: left;
 }
 
-.forsidebillede-home .billedeslider-container  {
+.forsidebillede-home .billedeslider-container {
   flex-grow: 1;
 }
 
@@ -1211,8 +1225,7 @@ display: flex;
 
 
 .forsidebillede-home .controls .prev,
-.forsidebillede-home .controls .next
- {
+.forsidebillede-home .controls .next {
   position: absolute;
   z-index: 2;
   top: 55%;
@@ -1229,9 +1242,9 @@ display: flex;
 
 .forsidebillede-home .controls .prev:hover,
 .forsidebillede-home .controls .next:hover {
-background-color: var(--blacknsf);
+  background-color: var(--blacknsf);
 }
- 
+
 
 .forsidebillede-home .controls .prev {
   left: 0;
@@ -1239,4 +1252,11 @@ background-color: var(--blacknsf);
 
 .forsidebillede-home .controls .next {
   right: 0;
+}
+
+.grid-container2{
+  position:absolute;
+  right:0;
+  top:300px;
+  z-index: 9998;
 }
