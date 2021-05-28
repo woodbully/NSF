@@ -1136,9 +1136,17 @@ table {
   text-align: left;
 
 }
+.call-to-action{
+  padding-top: 20px;
+  padding-bottom: 2%;
+}
 
-.padding {
-  padding:20%
+.dot{
+   height: 20px;
+}
+.dot a{
+  font-size: 15px;
+ 
 }
 
 #program-info {
