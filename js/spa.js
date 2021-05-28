@@ -28,7 +28,7 @@ function setActiveTab(pageId) {
 }
 
 // navigate to a new view/page by changing href
-function navigateTo(pageId){
+function navigateTo(pageId) {
   location.href = `#${pageId}`;
 }
 
@@ -37,14 +37,22 @@ function navigateTo(pageId){
 function pageChange() {
   let page = "home";
   if (location.hash) {
-    page = location.hash.slice(1);
+    let hashes = location.hash.split("#");
+    page = hashes[1];
+    if (hashes[2]) {
+      scrollToElement(hashes[2]);
+    }
   }
   showPage(page);
 }
 
+function scrollToElement(id) {
+  let offsetTop = document.querySelector(`#${id}`);
+  setTimeout(() => {
+    offsetTop.scrollIntoView({
+      behavior: "smooth"
+    });
+  }, 500);
+}
+
 pageChange(); // called by default when the app is loaded for the first time
-
-
-
-
-
