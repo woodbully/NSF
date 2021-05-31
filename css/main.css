@@ -1267,19 +1267,26 @@ table {
   z-index: 2;
   top: 55%;
   height: 40px;
-  width: 40px;
-  margin-top: -20px;
+  margin-left: 15px;
+  width: 60px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--rednsf);
-  background-color: var(--whitensf);
-  text-align: center;
-  line-height: 40px;
-  font-size: 20px;
+  background: var(--whitensf);
+  font-size: 22px;
+  transition: .3s;
+  border-radius: 10px;
   cursor: pointer;
 }
 
+
+
 .forsidebillede-home .controls .prev:hover,
 .forsidebillede-home .controls .next:hover {
-  background-color: var(--blacknsf);
+  background-color: var(--rednsf);
+  color: var(--whitensf);
 }
 
 
@@ -1310,8 +1317,8 @@ table {
   display: inline-block;
   width: 25px;
   height: 25px;
-  color:red;
   background-color: var(--whitensf);
+  color: var(--whitensf);
   border-radius: 50%;
   text-align: center;
   line-height: 25px;
@@ -1320,5 +1327,7 @@ table {
 
 .forsidebillede-home .indicator div.active {
   background-color: var(--blacknsf);
+  color: var(--blacknsf);
+  
 }
 
