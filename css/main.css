@@ -1126,6 +1126,7 @@ table {
 
 .table-icon {
   max-width: 60px;
+  padding: 0;
 }
 
 .table-icon img {
