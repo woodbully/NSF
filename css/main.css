@@ -12,6 +12,8 @@
 /*******************************/
 /****** General Styling *******/
 /*******************************/
+
+
 html {
   color: var(--blacknsf);
   font-family: 'Montserrat', sans-serif !important;
@@ -555,6 +557,7 @@ body>footer>div>div.sec.pladsen>div {
 
 #info > section > div.slider-forside111 > div.slideforside2222.active > div > div > p.dato {
   color: var(--whitensf);
+  text-shadow:2px 2px 4px #000000;
 }
 
 .hero .hero-text {
@@ -582,6 +585,7 @@ body>footer>div>div.sec.pladsen>div {
   margin-bottom: 0px;
   font-weight: 900;
   font-size: 3.5vw;
+  text-shadow:2px 2px 4px #000000;
 }
 
 #hero-p{
@@ -590,6 +594,7 @@ body>footer>div>div.sec.pladsen>div {
   margin-bottom: 5%;
   font-weight: 400;
   font-style: italic;
+  text-shadow:2px 2px 4px #000000;
 }
 
 
@@ -609,6 +614,7 @@ body>footer>div>div.sec.pladsen>div {
 #home>div.hero>div>div>div>p.dato {
   margin-bottom: 1%;
   font-weight: 500;
+ 
 }
 
 
