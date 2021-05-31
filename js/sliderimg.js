@@ -7,10 +7,12 @@ let index=0
 
 prev.addEventListener("click",function(){
 prevSlideforside2222()
+updateCircleIndicator()
 })
 
 next.addEventListener("click",function(){
 nextSlideforside2222()
+updateCircleIndicator()
 
 })
 
@@ -23,21 +25,22 @@ function circleIndicator(){
 
      if(i==0) {
         div.className="active";
-
      }
-     indicator.appendChild(div);
-     
+
+     indicator.appendChild(div);  
  }
- 
- 
+
 }
 
 circleIndicator();
 
 function updateCircleIndicator() {
-    for (let i = 0; 1 < indicator.children.length; i++){
-        console.log()
+    for(let i=0; i<indicator.children.length; i++){
+        // fjerner active classes fra alle indicatorer cirkler
+        indicator.children[i].classList.remove("active");
     }
+
+    indicator.children[index].classList.add("active");
 }
 
 //her for vi functionen til at trykke tilbage i slidsene
