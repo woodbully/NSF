@@ -72,6 +72,6 @@ function appendPosts(posts) {
     `;
   }
 
-  document.querySelector('#content').innerHTML = htmlTemplate;
+  document.querySelector('#content2').innerHTML = htmlTemplate;
 }
 
