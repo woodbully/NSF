@@ -553,6 +553,9 @@ body>footer>div>div.sec.pladsen>div {
   padding: 50px 0;
 }
 
+#info > section > div.slider-forside111 > div.slideforside2222.active > div > div > p.dato {
+  color: var(--whitensf);
+}
 
 .hero .hero-text {
   position: relative;
@@ -572,6 +575,21 @@ body>footer>div>div.sec.pladsen>div {
   font-size: 3.5vw;
   text-align: left;
   margin-top: 0;
+}
+
+.heading {
+  color: var(--whitensf);
+  margin-bottom: 0px;
+  font-weight: 900;
+  font-size: 3.5vw;
+}
+
+#hero-p{
+  color: var(--whitensf);
+  font-size: 20px;
+  margin-bottom: 5%;
+  font-weight: 400;
+  font-style: italic;
 }
 
 

@@ -8,11 +8,13 @@ let index=0
 prev.addEventListener("click",function(){
 prevSlideforside2222()
 updateCircleIndicator()
+
 })
 
 next.addEventListener("click",function(){
 nextSlideforside2222()
 updateCircleIndicator()
+
 
 })
 
