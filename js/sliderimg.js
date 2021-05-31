@@ -35,7 +35,7 @@ function circleIndicator(){
 circleIndicator();
 
 function updateCircleIndicator() {
-    for (let i=0; 1<indicator.children.length){
+    for (let i = 0; 1 < indicator.children.length; i++){
         console.log()
     }
 }
