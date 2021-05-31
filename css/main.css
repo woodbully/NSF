@@ -1122,6 +1122,9 @@ h3 {
 
 table {
   width: 100%;
+  font-size: 1.5vw;
+  font-family: 'Montserrat';
+  font-weight: 300;
 }
 
 .table-icon {
@@ -1143,10 +1146,12 @@ table {
 }
 
 .dot{
+   font-family: 'montserrat';
+   font-weight: 500;
  
 }
 .dot a{
-  font-size: ;
+  font-size: 1.5vw;
  
 }
 
