@@ -6,14 +6,16 @@ const indicator=document.querySelector(".indicator");
 let index=0
 
 prev.addEventListener("click",function(){
-prevSlideforside2222()
-updateCircleIndicator()
+prevSlideforside2222();
+updateCircleIndicator();
+resetTimer();
 
 })
 
 next.addEventListener("click",function(){
-nextSlideforside2222()
-updateCircleIndicator()
+nextSlideforside2222();
+updateCircleIndicator();
+resetTimer();
 
 
 })
@@ -80,4 +82,17 @@ function changeSlideforside2222(){
     }
 slides[index].classList.add("active");
 
+}
+
+function  autoPlay() {
+    nextSlideforside2222();
+    updateCircleIndicator();
+}
+
+let timer=setInterval(autoPlay,7000);
+
+function resetTimer() {
+    clearInterval(timer);
+
+    timer=setInterval(autoPlay,7000);
 }
