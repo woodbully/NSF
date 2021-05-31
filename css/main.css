@@ -1272,7 +1272,7 @@ table {
   position: absolute;
   left: 50%;
   bottom: 30px;
-  z-index: 2; 
+  z-index: 999; 
   transform: translateX(-50%);
 }
 
@@ -1281,9 +1281,14 @@ table {
   width: 25px;
   height: 25px;
   color:red;
-  background-color: var(--blacknsf);
+  background-color: var(--whitensf);
   border-radius: 50%;
   text-align: center;
   line-height: 25px;
   margin: 0 3px;
 }
+
+.forsidebillede-home .indicator div.active {
+  background-color: var(--blacknsf);
+}
+

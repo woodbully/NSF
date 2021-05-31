@@ -18,16 +18,27 @@ nextSlideforside2222()
 function circleIndicator(){
  for(let i=0; i< slides.length; i++){
      const div=document.createElement("div");
-     div.innerHTML=i=1;
+     div.innerHTML=i+1;
      div.setAttribute("onclick","indicateSlideforside2222(this)")
+
+     if(i==0) {
+        div.className="active";
+
+     }
      indicator.appendChild(div);
      
  }
- circleIndicator();
+ 
  
 }
 
+circleIndicator();
 
+function updateCircleIndicator() {
+    for (let i=0; 1<indicator.children.length){
+        console.log()
+    }
+}
 
 //her for vi functionen til at trykke tilbage i slidsene
 function prevSlideforside2222(){
