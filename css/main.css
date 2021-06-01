@@ -555,7 +555,7 @@ body>footer>div>div.sec.pladsen>div {
   padding: 50px 0;
 }
 
-#info > section > div.slider-forside111 > div.slideforside2222.active > div > div > p.dato {
+#home > section > div.slider-forside111 > div:nth-child(1) > div > div > p.dato{
   color: var(--whitensf);
   text-shadow:2px 2px 4px #000000;
 }
@@ -1315,19 +1315,20 @@ table {
 
 .forsidebillede-home .indicator div {
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   background-color: var(--whitensf);
   color: var(--whitensf);
   border-radius: 50%;
   text-align: center;
   line-height: 25px;
   margin: 0 3px;
+  font-size: 0.1px;
 }
 
 .forsidebillede-home .indicator div.active {
-  background-color: var(--blacknsf);
-  color: var(--blacknsf);
+  background-color: var(--rednsf);
+  color: var(--rednsf);
   
 }
 
