@@ -37,7 +37,7 @@ h1 {
 
 h2 {
   font-weight: 900;
-  font-size: 1.5vw;
+  font-size: 2vw;
   margin-bottom: 50px;
   letter-spacing: 1px;
   font-family: 'Epilogue',
@@ -810,7 +810,7 @@ body>footer>div>div.sec.pladsen>div {
   z-index: 3;
   color: var(--whitensf);
   justify-content: center;
-  font-size: 20px;
+  font-size: 25px;
   display: flex;
   text-shadow: rgb(0, 0, 0) 3px 3px 10px;
   margin: 0;
@@ -1095,6 +1095,8 @@ h3 {
 
 /* hero-styling */
 
+
+
 .hero2 {
   width: 100%;
   background-image: url(../billeder/concert-768722_1280.jpg);
@@ -1104,13 +1106,31 @@ h3 {
   background-position: 10% 10%;
 }
 
-.hero2 .hero-text h1 {
+.hero3 {
+  width: 100%;
+  background-image: url(../billeder/infosidebanner.jpg);
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.hero2 .hero-text h1,
+.hero3 .hero-text h1 {
   color: var(--whitensf);
   margin-bottom: 0px;
   font-weight: 900;
   font-size: 3.5vw;
   text-align: center;
   margin: 100px;
+}
+
+.infokort {
+  width: 100%;
+  background-image: url(../img/informationskort2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 500px;
 }
 
 /*sectioner CSS */
