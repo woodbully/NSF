@@ -1134,74 +1134,11 @@ h3 {
 }
 
 /*sectioner CSS */
-.program-grid {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-  column-gap: 10%;
-  max-width: 80%;
-  margin: auto;
-}
-
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.grid-item img {
-  width: 100%;
-}
-
-.program-grid ul {
-  padding: 0px;
-}
 
 .heading2 {
   font-size: 3.5vw;
   font-weight: 900;
-}
 
-table {
-  width: 100%;
-  font-size: 1.5vw;
-  font-family: 'Montserrat';
-  font-weight: 300;
-}
-
-.table-icon {
-  max-width: 60px;
-  padding: 0;
-}
-
-.table-icon img {
-  height: 100%;
-}
-
-.table-info {
-  text-align: left;
-
-}
-.call-to-action{
-  padding-top: 20px;
-  padding-bottom: 2%;
-}
-
-.dot{
-   font-family: 'montserrat';
-   font-weight: 500;
- 
-}
-.dot a{
-  font-size: 1.5vw;
- 
-}
-
-#program-info {
-  color: var(--rednsf);
-}
 
 @media screen and (max-width: 1142px) {
   .heading2 {
