@@ -3,53 +3,61 @@
 
 $(document).ready(function(){
   
-    var interval = 3500;
-    var img_count = $('.slide').length;
-    //alert(img_count);
-    var imgs_displayed;  
+  var interval = 3500;
+  var img_count = $('.slide').length;
+  //alert(img_count);
+  var imgs_displayed;  
 
 
-    //alt efter hvor mange logoer der skal være i vinduet når det skaleres ned  
-    if($(window).width() < 750){ imgs_displayed = 3;}
-    if($(window).width() < 500){ imgs_displayed = 2;}
-    if($(window).width() < 300){ imgs_displayed = 1;}
-    if($(window).width() >700){ imgs_displayed = 4;}
-   
-    
-    var slide_width = 100/imgs_displayed;
-    $('.slide').css('width', slide_width + '%');
-    var i, left = 0;
-    for(i=0; i<img_count; i++){
-      $('.slide').eq(i).css('left', left + '%');
-      left += slide_width;
-    }
-    var a;
-    var b = 0;
-    
-    setInterval(function(){ 
-
-
-     // hvilken side logoerne skal slide til 
-    function slideEffect(){ 
-      left = -slide_width;
-      for(a=0; a<img_count; a++){
-       $('.slide').eq(a).css('left', left + '%');
-        left += slide_width;
-     }
-    } 
-      
-  function imgToEnd(){  
-  if (b == 1){  $('.slide').eq(0).addClass('notransition');
-      $('.slide').eq(0).appendTo('.slider_container');
-      var last_slide_id = img_count - 1;
-      $('.slide').eq(last_slide_id).removeClass('notransition');
-             }
+  //alt efter hvor mange logoer der skal være i vinduet når det skaleres ned  
+  if($(window).width() < 750){ imgs_displayed = 3;}
+  if($(window).width() < 500){ imgs_displayed = 2;}
+  if($(window).width() < 300){ imgs_displayed = 1;}
+  if($(window).width() >700){ imgs_displayed = 4;}
+ 
+  
+  var slide_width = 100/imgs_displayed;
+  $('.slide').css('width', slide_width + '%');
+  var i, left = 0;
+  for(i=0; i<img_count; i++){
+    $('.slide').eq(i).css('left', left + '%');
+    left += slide_width;
   }
-      
-      $.when(imgToEnd()).done(slideEffect());
-      b = 1;
+  var a;
+  var b = 0;
+  
+  setInterval(function(){ 
+
+
+   // hvilken side logoerne skal slide til 
+  function slideEffect(){ 
+    left = -slide_width;
+    for(a=0; a<img_count; a++){
+     $('.slide').eq(a).css('left', left + '%');
+      left += slide_width;
+   }
+  } 
     
-    }, interval);
+function imgToEnd(){  
+if (b == 1){  $('.slide').eq(0).addClass('notransition');
+    $('.slide').eq(0).appendTo('.slider_container');
+    var last_slide_id = img_count - 1;
+    $('.slide').eq(last_slide_id).removeClass('notransition');
+           }
+}
     
-    
-  });//end document ready
+    $.when(imgToEnd()).done(slideEffect());
+    b = 1;
+  
+  }, interval);
+  
+  
+});//end document ready
+
+
+
+// image pop ud i footer
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
