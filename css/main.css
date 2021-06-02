@@ -854,19 +854,22 @@ body>footer>div>div.sec.pladsen>div {
 
 @media screen and (max-width: 1008px) {
 
-  .card {
+  .card a {
     width: 35%;
     margin-bottom: 100px;
 
   }
 }
 
+
 @media screen and (max-width: 590px) {
 
-  .card {
+  .card a{
     width: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+
   }
+
 }
 
 
