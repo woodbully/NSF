@@ -205,23 +205,33 @@ a {
 ul li:hover a {
   transition-timing-function: ease-in-out;
   transition-duration: 0.3s;
-  transform: scale(1.2);
 }
 
 #li-billetter:hover a {
   color: var(--rednsf);
+
 }
 
 #li-information:hover a {
   color: var(--yellownsf);
+
 }
 
 #li-program:hover a {
   color: var(--bluensf);
+
 }
 
 #li-kontakt:hover a {
   color: var(--purplensf);
+
+}
+
+body>div>div.nav-mobile-menu.active>div>a>img{
+  transition-duration: 0.3s;
+}
+body>div>div.nav-mobile-menu.active>div>a>img:hover{
+  transform: scale(1.3);
 }
 
 @media (max-width: 1086px) {
@@ -430,9 +440,8 @@ footer {
   display: inline-block;
   color: grey;
 }
-
-.footerlinks:hover {
-  transition: none;
+ul li:hover a{
+  color: var(--rednsf);
 }
 
 .kontakt {
