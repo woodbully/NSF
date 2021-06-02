@@ -161,6 +161,7 @@ a {
   grid-template-columns: 16% auto 16%;
   align-items: center;
   height: 100%;
+  border-bottom: 0.8px solid rgba(211, 211, 211, 0.5);
 }
 
 .nav-mobile-menu {
