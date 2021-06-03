@@ -5,6 +5,7 @@ const next=document.querySelector(".next");
 const indicator=document.querySelector(".indicator");
 let index=0
 
+//lytter på funktionen ved clickevent
 prev.addEventListener("click",function(){
 prevSlideforside2222();
 updateCircleIndicator();
@@ -17,8 +18,8 @@ nextSlideforside2222();
 updateCircleIndicator();
 resetTimer();
 
-
 })
+
 
 // Her laver vi cirkel indicatorer 
 function circleIndicator(){
@@ -44,6 +45,7 @@ function updateCircleIndicator() {
         indicator.children[i].classList.remove("active");
     }
 
+    // tilføjer active classes fra indicatorer cirklen
     indicator.children[index].classList.add("active");
 }
 
@@ -61,9 +63,7 @@ changeSlideforside2222();
 
 }
 
-
 //her for vi functionen til at trykke videre i slidsene
-
 function nextSlideforside2222(){
 if(index==slides.length-1) {
     index=0;
@@ -84,6 +84,7 @@ slides[index].classList.add("active");
 
 }
 
+//her kreeres et autoplay
 function  autoPlay() {
     nextSlideforside2222();
     updateCircleIndicator();
@@ -91,6 +92,7 @@ function  autoPlay() {
 
 let timer=setInterval(autoPlay,7000);
 
+// resetter timerne,
 function resetTimer() {
     clearInterval(timer);
 
